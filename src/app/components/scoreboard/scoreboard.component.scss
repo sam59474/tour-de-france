@@ -1,0 +1,165 @@
+$yellow: #FFD700;
+$blue: #003087;
+$red: #C8102E;
+$light: #F8F4E8;
+$white: #FFFFFF;
+$dark: #1A1A2E;
+$gray: #6B7280;
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.state-message {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  color: $gray;
+
+  &.error { color: $red; }
+}
+
+.card {
+  background: $white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid #E5E7EB;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: $blue;
+  color: $white;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  h2 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: $yellow;
+  }
+}
+
+.btn-copy {
+  background: $yellow;
+  color: $dark;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+
+  &:hover { background: darken($yellow, 8%); }
+}
+
+.period-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+
+  label { color: rgba(255,255,255,0.8); }
+
+  select {
+    background: rgba(255,255,255,0.15);
+    color: $white;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.85rem;
+    option { background: $blue; }
+  }
+}
+
+.standings-table,
+.stage-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+
+  th {
+    background: #F3F4F6;
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $gray;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid #F3F4F6;
+    color: $dark;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  tbody tr:hover { background: #FAFAFA; }
+
+  tbody tr.first {
+    background: #FFFBEB;
+    td { font-weight: 600; }
+  }
+  tbody tr.second { background: #F9FAFB; }
+  tbody tr.third { background: #FFF7F0; }
+}
+
+.rank-cell { font-size: 1.1rem; width: 2rem; }
+
+.player-name {
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.total-score {
+  font-weight: 700;
+  color: $blue;
+  font-size: 1rem;
+}
+
+.score-cell {
+  text-align: center;
+  &.stage-win {
+    background: #FFFBEB;
+    color: darken($yellow, 20%);
+    font-weight: 700;
+  }
+}
+
+.stage-col {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.stage-grid-wrapper {
+  overflow-x: auto;
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: $gray;
+  font-style: italic;
+}
+
+.perfect-score-note {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.75rem;
+  color: $gray;
+  font-style: italic;
+  border-top: 1px solid #F3F4F6;
+  text-align: right;
+}

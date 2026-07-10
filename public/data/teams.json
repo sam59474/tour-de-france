@@ -1,0 +1,129 @@
+{
+  "periods": [
+    {
+      "periodId": 1,
+      "teams": [
+        {
+          "player": "Sam",
+          "elite": "Arnaud De Lie",
+          "capitaine": "Juan Ayuso",
+          "coequipiers": ["Dylan Groenewegen", "Mattias Skjelmose"],
+          "stageOverrides": [
+            {
+              "stages": [2, 3, 4, 5, 6, 7],
+              "coequipiers": ["Tobias Foss", "Mattias Skjelmose"]
+            }
+          ]
+        },
+        {
+          "player": "Ron",
+          "elite": "Tadej Pogačar",
+          "capitaine": "Florian Lipowitz",
+          "coequipiers": ["Tobias Halland Johannessen", "Cian Uijtdebroeks"],
+          "stageOverrides": []
+        },
+        {
+          "player": "Margaret",
+          "elite": "Tadej Pogačar",
+          "capitaine": "Paul Seixas",
+          "coequipiers": ["Juan Ayuso", "Florian Lipowitz"],
+          "stageOverrides": []
+        },
+        {
+          "player": "Kendall",
+          "elite": "Tadej Pogačar",
+          "capitaine": "Florian Lipowitz",
+          "coequipiers": ["Mauro Schmid", "Romain Grégoire"],
+          "stageOverrides": []
+        },
+        {
+          "player": "Luke",
+          "elite": "Isaac Del Toro",
+          "capitaine": "Paul Seixas",
+          "coequipiers": ["Lenny Martinez", "Brandon McNulty"],
+          "stageOverrides": []
+        }
+      ]
+    },
+    {
+      "periodId": 2,
+      "teams": [
+        {
+          "player": "Sam",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        },
+        {
+          "player": "Ron",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        },
+        {
+          "player": "Margaret",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        },
+        {
+          "player": "Kendall",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        },
+        {
+          "player": "Luke",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        }
+      ]
+    },
+    {
+      "periodId": 3,
+      "teams": [
+        {
+          "player": "Sam",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        },
+        {
+          "player": "Ron",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        },
+        {
+          "player": "Margaret",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        },
+        {
+          "player": "Kendall",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        },
+        {
+          "player": "Luke",
+          "elite": null,
+          "capitaine": null,
+          "coequipiers": [],
+          "stageOverrides": []
+        }
+      ]
+    }
+  ]
+}

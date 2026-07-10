@@ -1,0 +1,114 @@
+<div class="scoreboard">
+
+  <!-- Loading / Error -->
+  <div *ngIf="loading" class="state-message">
+    <span class="spinner">⏳</span> Chargement des scores…
+  </div>
+  <div *ngIf="error" class="state-message error">⚠️ {{ error }}</div>
+
+  <ng-container *ngIf="!loading && !error && data">
+
+    <!-- Overall Standings -->
+    <section class="card standings-card">
+      <div class="card-header">
+        <h2>🏅 Classement Général</h2>
+        <button class="btn-copy" (click)="copyToClipboard()">
+          {{ copySuccess ? '✅ Copié !' : '📋 Copier pour le groupe' }}
+        </button>
+      </div>
+
+      <div *ngIf="totals.length === 0" class="empty-state">
+        Aucun résultat encore entré. Allez sur <strong>Étapes</strong> pour commencer.
+      </div>
+
+      <table *ngIf="totals.length > 0" class="standings-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Joueur</th>
+            <th>Étapes</th>
+            <th>Périodes</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of totals; let i = index" [class]="getRankClass(i + 1)">
+            <td class="rank-cell">{{ getMedal(i + 1) || (i + 1) }}</td>
+            <td class="player-name">{{ t.player }}</td>
+            <td>{{ t.stageTotal | number:'1.0-0' }}</td>
+            <td>{{ t.periodTotal | number:'1.0-0' }}</td>
+            <td class="total-score">{{ t.grandTotal | number:'1.0-0' }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="perfect-score-note">
+        Score parfait possible : 3 000 pts (2 100 étapes + 900 périodes)
+      </div>
+    </section>
+
+    <!-- Stage-by-Stage Breakdown -->
+    <section class="card" *ngIf="stageScores.length > 0">
+      <div class="card-header">
+        <h2>📊 Détail par Étape</h2>
+        <div class="period-filter">
+          <label>Période :</label>
+          <select [(ngModel)]="selectedPeriod" [ngModelOptions]="{standalone: true}">
+            <option [value]="0">Toutes</option>
+            <option *ngFor="let p of periods" [value]="p.id">{{ p.name }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="stage-grid-wrapper">
+        <table class="stage-table">
+          <thead>
+            <tr>
+              <th>Joueur</th>
+              <th *ngFor="let s of filteredStageScores" class="stage-col">
+                Ét. {{ s.stageNumber }}
+              </th>
+              <th>Total Étapes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let t of totals">
+              <td class="player-name">{{ t.player }}</td>
+              <td *ngFor="let s of filteredStageScores" class="score-cell"
+                  [class.stage-win]="playerHasStageWin(s.stageNumber, t.player)">
+                {{ getStageScore(t.player, s.stageNumber) | number:'1.0-0' }}
+              </td>
+              <td class="total-score">{{ t.stageTotal | number:'1.0-0' }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Period Scores -->
+    <section class="card" *ngIf="periodScores.length > 0">
+      <div class="card-header">
+        <h2>🗓️ Scores de Période</h2>
+      </div>
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th>Joueur</th>
+            <th *ngFor="let ps of periodScores">{{ data.config.periods[ps.periodId - 1].name }}</th>
+            <th>Total Périodes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of totals">
+            <td class="player-name">{{ t.player }}</td>
+            <td *ngFor="let ps of periodScores" class="score-cell">
+              {{ getPeriodScore(t.player, ps.periodId) | number:'1.0-0' }}
+            </td>
+            <td class="total-score">{{ t.periodTotal | number:'1.0-0' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </ng-container>
+</div>

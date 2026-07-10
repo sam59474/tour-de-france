@@ -1,0 +1,283 @@
+$yellow: #FFD700;
+$blue: #003087;
+$red: #C8102E;
+$white: #FFFFFF;
+$dark: #1A1A2E;
+$gray: #6B7280;
+$light-gray: #F3F4F6;
+
+.team-setup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.state-message {
+  text-align: center;
+  padding: 3rem;
+  color: $gray;
+  &.error { color: $red; }
+}
+
+// Period Tabs
+.period-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.6rem 1rem;
+  border: 2px solid #D1D5DB;
+  border-radius: 6px;
+  background: $white;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+  min-width: 160px;
+
+  &:hover { border-color: $blue; }
+
+  &.active {
+    border-color: $blue;
+    background: $blue;
+
+    .tab-number { color: $yellow; }
+    .tab-name { color: $white; }
+    .tab-dates { color: rgba(255,255,255,0.65); }
+  }
+}
+
+.tab-number {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $gray;
+}
+
+.tab-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $dark;
+  margin-top: 0.1rem;
+}
+
+.tab-dates {
+  font-size: 0.72rem;
+  color: $gray;
+  font-style: italic;
+}
+
+// Cards
+.card {
+  background: $white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #E5E7EB;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: $blue;
+  color: $white;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  h2 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: $yellow;
+  }
+
+  .period-subtitle,
+  .hint {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.7);
+    font-style: italic;
+  }
+}
+
+.stages-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  flex-wrap: wrap;
+}
+
+.stages-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: $gray;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stage-badge {
+  background: $blue;
+  color: $white;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+// Teams Grid
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.team-card {
+  background: $white;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.team-header {
+  background: $dark;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $yellow;
+  }
+}
+
+.switch-badge {
+  font-size: 0.7rem;
+  background: $red;
+  color: $white;
+  padding: 0.15rem 0.4rem;
+  border-radius: 10px;
+}
+
+.role-section {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid $light-gray;
+
+  &:last-of-type { border-bottom: none; }
+}
+
+.role-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+
+  &.elite-label { color: #D97706; }
+  &.captain-label { color: $blue; }
+  &.coequipier-label { color: $gray; }
+}
+
+.cyclist-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cyclist-name {
+  font-size: 0.85rem;
+  color: $dark;
+  font-weight: 500;
+}
+
+// Overrides
+.overrides-section {
+  padding: 0.5rem 1rem;
+  background: #FFFBEB;
+  border-top: 1px dashed #FCD34D;
+}
+
+.overrides-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #B45309;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.override-row {
+  font-size: 0.78rem;
+  color: $dark;
+  margin-bottom: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  align-items: baseline;
+}
+
+.override-stages {
+  font-weight: 600;
+  color: #B45309;
+}
+
+.override-detail {
+  color: $dark;
+}
+
+.no-team {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.82rem;
+  color: $gray;
+  font-style: italic;
+}
+
+// Elites Card
+.elite-card {}
+
+.elites-list {
+  padding: 0.5rem 0;
+}
+
+.elite-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border-bottom: 1px solid $light-gray;
+
+  &:last-child { border-bottom: none; }
+}
+
+.elite-rank {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: $blue;
+  color: $yellow;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.elite-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: $dark;
+}

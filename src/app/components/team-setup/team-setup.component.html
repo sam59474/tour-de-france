@@ -1,0 +1,102 @@
+<div class="team-setup">
+
+  <div *ngIf="loading" class="state-message">⏳ Chargement…</div>
+  <div *ngIf="error" class="state-message error">⚠️ {{ error }}</div>
+
+  <ng-container *ngIf="!loading && !error && data">
+
+    <!-- Period Tabs -->
+    <div class="period-tabs">
+      <button
+        *ngFor="let p of periods"
+        class="tab"
+        [class.active]="p.id === selectedPeriodId"
+        (click)="selectedPeriodId = p.id"
+      >
+        <span class="tab-number">P{{ p.id }}</span>
+        <span class="tab-name">{{ p.name }}</span>
+        <span class="tab-dates">{{ p.dates }}</span>
+      </button>
+    </div>
+
+    <!-- Period Header -->
+    <section class="card" *ngIf="selectedPeriod">
+      <div class="card-header">
+        <h2>{{ selectedPeriod.name }}</h2>
+        <span class="period-subtitle">{{ selectedPeriod.subtitle }} · {{ selectedPeriod.dates }}</span>
+      </div>
+      <div class="stages-list">
+        <span class="stages-label">Étapes :</span>
+        <span *ngFor="let s of selectedPeriod.stages" class="stage-badge">{{ s }}</span>
+      </div>
+    </section>
+
+    <!-- Team Cards -->
+    <div class="teams-grid">
+      <div class="team-card" *ngFor="let team of teamsForPeriod">
+        <div class="team-header">
+          <h3>{{ team.player }}</h3>
+          <span *ngIf="getCapitaineSwitches(team.player) > 0" class="switch-badge">
+            {{ getCapitaineSwitches(team.player) }} changement(s) de capitaine
+          </span>
+        </div>
+
+        <div *ngIf="team.elite; else noTeam">
+          <div class="role-section">
+            <div class="role-label elite-label">Élite</div>
+            <div class="cyclist-row">
+              <span class="cyclist-name">{{ team.elite }}</span>
+            </div>
+          </div>
+
+          <div class="role-section">
+            <div class="role-label captain-label">Capitaine</div>
+            <div class="cyclist-row">
+              <span class="cyclist-name">{{ team.capitaine }}</span>
+            </div>
+          </div>
+
+          <div class="role-section">
+            <div class="role-label coequipier-label">Coéquipiers</div>
+            <div class="cyclist-row" *ngFor="let c of team.coequipiers">
+              <span class="cyclist-name">{{ c }}</span>
+            </div>
+          </div>
+
+          <!-- Stage Overrides -->
+          <div *ngIf="hasOverrides(team)" class="overrides-section">
+            <div class="overrides-label">🔄 Remplacements</div>
+            <div *ngFor="let override of team.stageOverrides" class="override-row">
+              <span class="override-stages">Étapes {{ override.stages.join(', ') }}:</span>
+              <span *ngIf="override.coequipiers.length" class="override-detail">
+                Coéquipiers → {{ override.coequipiers.join(', ') }}
+              </span>
+              <span *ngIf="override.capitaine" class="override-detail">
+                Capitaine → {{ override.capitaine }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <ng-template #noTeam>
+          <div class="no-team">Équipe non encore sélectionnée</div>
+        </ng-template>
+      </div>
+    </div>
+
+    <!-- Élites List -->
+    <section class="card elite-card">
+      <div class="card-header">
+        <h2>⭐ Les 7 Élites</h2>
+        <span class="hint">Chaque joueur ne peut choisir le même élite qu'une seule fois par période</span>
+      </div>
+      <div class="elites-list">
+        <div *ngFor="let e of data.config.elites; let i = index" class="elite-row">
+          <span class="elite-rank">{{ i + 1 }}</span>
+          <span class="elite-name">{{ e }}</span>
+        </div>
+      </div>
+    </section>
+
+  </ng-container>
+</div>

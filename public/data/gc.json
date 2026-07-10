@@ -1,0 +1,17 @@
+{
+  "note": "General Classification standings after each Period. Add after period ends.",
+  "afterPeriod": [
+    {
+      "periodId": 1,
+      "standings": []
+    },
+    {
+      "periodId": 2,
+      "standings": []
+    },
+    {
+      "periodId": 3,
+      "standings": []
+    }
+  ]
+}

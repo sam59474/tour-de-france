@@ -1,0 +1,214 @@
+{
+  "stages": [
+    {
+      "stageNumber": 1,
+      "periodId": 1,
+      "date": "2025-07-04",
+      "name": "Stage 1",
+      "origin": "Barcelona",
+      "destination": "Barcelona",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 2,
+      "periodId": 1,
+      "date": "2025-07-05",
+      "name": "Stage 2",
+      "origin": "Barcelona",
+      "destination": "Barcelona",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 3,
+      "periodId": 1,
+      "date": "2025-07-06",
+      "name": "Stage 3",
+      "origin": "Barcelona",
+      "destination": "Barcelona",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 4,
+      "periodId": 1,
+      "date": "2025-07-07",
+      "name": "Stage 4",
+      "origin": "Barcelona",
+      "destination": "Barcelona",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 5,
+      "periodId": 1,
+      "date": "2025-07-08",
+      "name": "Stage 5",
+      "origin": "Barcelona",
+      "destination": "Barcelona",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 6,
+      "periodId": 1,
+      "date": "2025-07-09",
+      "name": "Stage 6",
+      "origin": "Barcelona",
+      "destination": "Bordeaux",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 7,
+      "periodId": 1,
+      "date": "2025-07-10",
+      "name": "Stage 7",
+      "origin": "Bordeaux",
+      "destination": "Bordeaux",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 8,
+      "periodId": 2,
+      "date": "2025-07-11",
+      "name": "Stage 8",
+      "origin": "Périgueux",
+      "destination": "Périgueux",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 9,
+      "periodId": 2,
+      "date": "2025-07-12",
+      "name": "Stage 9",
+      "origin": "Périgueux",
+      "destination": "Périgueux",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 10,
+      "periodId": 2,
+      "date": "2025-07-13",
+      "name": "Stage 10",
+      "origin": "Périgueux",
+      "destination": "Périgueux",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 11,
+      "periodId": 2,
+      "date": "2025-07-14",
+      "name": "Stage 11",
+      "origin": "Périgueux",
+      "destination": "Périgueux",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 12,
+      "periodId": 2,
+      "date": "2025-07-15",
+      "name": "Stage 12",
+      "origin": "Périgueux",
+      "destination": "Périgueux",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 13,
+      "periodId": 2,
+      "date": "2025-07-16",
+      "name": "Stage 13",
+      "origin": "Périgueux",
+      "destination": "Périgueux",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 14,
+      "periodId": 2,
+      "date": "2025-07-17",
+      "name": "Stage 14",
+      "origin": "Périgueux",
+      "destination": "Le Markstein Fellering",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 15,
+      "periodId": 3,
+      "date": "2025-07-18",
+      "name": "Stage 15",
+      "origin": "Champagnole",
+      "destination": "Champagnole",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 16,
+      "periodId": 3,
+      "date": "2025-07-19",
+      "name": "Stage 16",
+      "origin": "Champagnole",
+      "destination": "Champagnole",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 17,
+      "periodId": 3,
+      "date": "2025-07-20",
+      "name": "Stage 17",
+      "origin": "Champagnole",
+      "destination": "Champagnole",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 18,
+      "periodId": 3,
+      "date": "2025-07-21",
+      "name": "Stage 18",
+      "origin": "Champagnole",
+      "destination": "Champagnole",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 19,
+      "periodId": 3,
+      "date": "2025-07-22",
+      "name": "Stage 19",
+      "origin": "Champagnole",
+      "destination": "Champagnole",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 20,
+      "periodId": 3,
+      "date": "2025-07-23",
+      "name": "Stage 20",
+      "origin": "Champagnole",
+      "destination": "Champagnole",
+      "completed": false,
+      "results": []
+    },
+    {
+      "stageNumber": 21,
+      "periodId": 3,
+      "date": "2025-07-26",
+      "name": "Stage 21",
+      "origin": "Champagnole",
+      "destination": "Paris",
+      "completed": false,
+      "results": []
+    }
+  ]
+}

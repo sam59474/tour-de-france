@@ -1,0 +1,44 @@
+{
+  "players": ["Sam", "Ron", "Margaret", "Kendall", "Luke"],
+  "elites": [
+    "Tadej Pogačar",
+    "Jonas Vingegaard",
+    "Isaac Del Toro",
+    "Remco Evenepoel",
+    "Arnaud De Lie",
+    "Jasper Philipsen",
+    "Tom Pidcock"
+  ],
+  "periods": [
+    {
+      "id": 1,
+      "name": "La Première Période",
+      "subtitle": "Barcelona – Bordeaux",
+      "stages": [1, 2, 3, 4, 5, 6, 7],
+      "dates": "July 4–10"
+    },
+    {
+      "id": 2,
+      "name": "La Deuxième Période",
+      "subtitle": "Périgueux – Le Markstein Fellering",
+      "stages": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": "July 11–18"
+    },
+    {
+      "id": 3,
+      "name": "La Troisième Période",
+      "subtitle": "Champagnole – Paris",
+      "stages": [15, 16, 17, 18, 19, 20, 21],
+      "dates": "July 19–26"
+    }
+  ],
+  "dnfPosition": 9999,
+  "scoring": {
+    "stageBase": 80,
+    "stageWinBonus": 20,
+    "stageRankFactor": 30,
+    "periodCapitaineBase": 150,
+    "periodCapitaineRankFactor": 150,
+    "periodLoyaltyBonus": 75
+  }
+}
