@@ -1,112 +1,180 @@
 <div class="stage-entry">
 
-  <div *ngIf="loading" class="state-message">⏳ Chargement…</div>
+  <div *ngIf="loading" class="state-message">⏳ Loading…</div>
   <div *ngIf="error" class="state-message error">⚠️ {{ error }}</div>
 
   <ng-container *ngIf="!loading && !error && data">
 
-    <!-- Stage Selector -->
-    <section class="card">
-      <div class="card-header">
-        <h2>📝 Entrer les Résultats d'Étape</h2>
-      </div>
-      <div class="stage-selector">
-        <label for="stageSelect">Choisir une étape :</label>
-        <select id="stageSelect" [(ngModel)]="selectedStageNumber" (ngModelChange)="onStageChange()">
-          <option *ngFor="let s of stages" [value]="s.stageNumber">
-            Étape {{ s.stageNumber }} — {{ s.origin }} → {{ s.destination }}
-            {{ s.completed ? '✅' : '' }}
-          </option>
-        </select>
-      </div>
+    <!-- Tab switcher -->
+    <div class="tab-bar">
+      <button class="tab-btn" [class.active]="activeTab === 'stages'" (click)="activeTab = 'stages'">
+        🚴 Stage Results
+      </button>
+      <button class="tab-btn" [class.active]="activeTab === 'gc'" (click)="activeTab = 'gc'">
+        📋 GC Standings
+      </button>
+    </div>
 
-      <div *ngIf="selectedStage" class="stage-info">
-        <span class="badge" [class.completed]="selectedStage.completed">
-          {{ selectedStage.completed ? '✅ Complétée' : '🔄 En attente' }}
-        </span>
-        <span class="stage-date">{{ selectedStage.date | date:'longDate' }}</span>
-      </div>
-    </section>
+    <!-- ── STAGE RESULTS TAB ── -->
+    <ng-container *ngIf="activeTab === 'stages'">
 
-    <!-- Position Entry -->
-    <section class="card" *ngIf="cyclistEntries.length > 0">
-      <div class="card-header">
-        <h2>🚴 Positions des Coureurs</h2>
-        <span class="hint">Entrez la position au classement de l'étape (1 = 1er)</span>
-      </div>
-
-      <div class="entry-grid">
-        <div class="entry-header">
-          <span>Coureur</span>
-          <span>Position</span>
-          <span>DNF/DNS</span>
+      <section class="card">
+        <div class="card-header">
+          <h2>📝 Enter Stage Results</h2>
         </div>
-        <div class="entry-row" *ngFor="let entry of cyclistEntries">
-          <span class="cyclist-name">{{ entry.cyclist }}</span>
-          <input
-            type="number"
-            min="1"
-            [(ngModel)]="entry.position"
-            [disabled]="entry.dnf"
-            placeholder="ex. 14"
-            class="position-input"
-          />
-          <label class="dnf-label">
-            <input type="checkbox" [(ngModel)]="entry.dnf" (change)="onDnfToggle(entry)" />
-            <span>DNF</span>
-          </label>
+        <div class="stage-selector">
+          <label for="stageSelect">Select a stage:</label>
+          <select id="stageSelect" [(ngModel)]="selectedStageNumber" (ngModelChange)="onStageChange()">
+            <option *ngFor="let s of stages" [value]="s.stageNumber">
+              Stage {{ s.stageNumber }} — {{ s.origin }} → {{ s.destination }} ({{ s.distance }}) {{ s.completed ? '✅' : '' }}
+            </option>
+          </select>
         </div>
-      </div>
+        <div *ngIf="selectedStage" class="stage-info">
+          <span class="badge" [class.completed]="selectedStage.completed">
+            {{ selectedStage.completed ? '✅ Complete' : '🔄 Pending' }}
+          </span>
+          <span [class]="'stage-type-badge type-' + stageTypeClass(selectedStage.type)">
+            {{ selectedStage.type }}
+          </span>
+          <span class="stage-distance">{{ selectedStage.distance }}</span>
+          <span class="stage-date">{{ selectedStage.date | date:'longDate' }}</span>
+        </div>
+      </section>
 
-      <div class="entry-actions">
-        <button class="btn-preview" (click)="computePreview()" [disabled]="!hasAllPositions">
-          👁️ Prévisualiser les scores
-        </button>
-        <button class="btn-save" (click)="downloadStagesJson()" [disabled]="!hasAllPositions">
-          💾 Sauvegarder (télécharger stages.json)
-        </button>
-      </div>
+      <section class="card" *ngIf="cyclistEntries.length > 0">
+        <div class="card-header">
+          <h2>🚴 Cyclist Finishing Positions</h2>
+          <span class="hint">Enter each cyclist's finishing position (1 = first place)</span>
+        </div>
+        <div class="entry-grid">
+          <div class="entry-header">
+            <span>Cyclist</span>
+            <span>Position</span>
+            <span>DNF/DNS</span>
+          </div>
+          <div class="entry-row" *ngFor="let entry of cyclistEntries">
+            <span class="cyclist-name">{{ entry.cyclist }}</span>
+            <input
+              type="number"
+              min="1"
+              [(ngModel)]="entry.position"
+              [disabled]="entry.dnf"
+              placeholder="e.g. 14"
+              class="position-input"
+            />
+            <label class="dnf-label">
+              <input type="checkbox" [(ngModel)]="entry.dnf" (change)="onDnfToggle(entry)" />
+              <span>DNF</span>
+            </label>
+          </div>
+        </div>
+        <div class="entry-actions">
+          <button class="btn-preview" (click)="computePreview()" [disabled]="!hasAllPositions">
+            👁️ Preview scores
+          </button>
+          <button class="btn-save" (click)="downloadStagesJson()" [disabled]="!hasAllPositions">
+            💾 Save (download stages.json)
+          </button>
+        </div>
+        <div *ngIf="!hasAllPositions" class="validation-note">
+          ⚠️ Enter a position or check DNF for every cyclist before continuing.
+        </div>
+        <div *ngIf="saveMessage" class="save-message">{{ saveMessage }}</div>
+      </section>
 
-      <div *ngIf="!hasAllPositions" class="validation-note">
-        ⚠️ Entrez une position ou cochez DNF pour chaque coureur avant de continuer.
-      </div>
+      <section class="card preview-card" *ngIf="preview.length > 0">
+        <div class="card-header">
+          <h2>📊 Score Preview — Stage {{ selectedStageNumber }}</h2>
+        </div>
+        <table class="preview-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player</th>
+              <th>Cyclists (positions)</th>
+              <th>Top 3 Sum</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let ps of preview; let i = index" [class]="getRankClass(i + 1)">
+              <td>{{ i + 1 }}</td>
+              <td class="player-name">
+                {{ ps.player }}
+                <span *ngIf="ps.hasStageWin" class="win-badge">⭐ Stage win!</span>
+              </td>
+              <td class="cyclists-cell">
+                <span *ngFor="let c of ps.cyclists; let j = index" class="cyclist-tag">
+                  {{ c }} <em>({{ ps.positions[j] === 9999 ? 'DNF' : ps.positions[j] }})</em>
+                </span>
+              </td>
+              <td>{{ ps.topThreeSum }}</td>
+              <td class="score">{{ ps.score | number:'1.0-1' }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-      <div *ngIf="saveMessage" class="save-message">{{ saveMessage }}</div>
-    </section>
+    </ng-container>
 
-    <!-- Score Preview -->
-    <section class="card preview-card" *ngIf="preview.length > 0">
-      <div class="card-header">
-        <h2>📊 Aperçu des Scores — Étape {{ selectedStageNumber }}</h2>
-      </div>
-      <table class="preview-table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Joueur</th>
-            <th>Coureurs (positions)</th>
-            <th>Top 3 Somme</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let ps of preview; let i = index" [class]="getRankClass(i + 1)">
-            <td>{{ i + 1 }}</td>
-            <td class="player-name">
-              {{ ps.player }}
-              <span *ngIf="ps.hasStageWin" class="win-badge">⭐ Victoire</span>
-            </td>
-            <td class="cyclists-cell">
-              <span *ngFor="let c of ps.cyclists; let j = index" class="cyclist-tag">
-                {{ c }} <em>({{ ps.positions[j] === 9999 ? 'DNF' : ps.positions[j] }})</em>
-              </span>
-            </td>
-            <td>{{ ps.topThreeSum }}</td>
-            <td class="score">{{ ps.score | number:'1.0-1' }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <!-- ── GC STANDINGS TAB ── -->
+    <ng-container *ngIf="activeTab === 'gc'">
+
+      <section class="card">
+        <div class="card-header">
+          <h2>📋 GC Standings — Capitaines</h2>
+        </div>
+        <div class="stage-selector">
+          <label for="gcPeriodSelect">Period:</label>
+          <select id="gcPeriodSelect" [(ngModel)]="selectedGcPeriodId" (ngModelChange)="onGcPeriodChange()">
+            <option *ngFor="let p of gcPeriods" [value]="p.id">
+              {{ p.name }} — {{ p.dates }}
+              {{ gcPeriodHasStandings && p.id === selectedGcPeriodId ? '✅' : '' }}
+            </option>
+          </select>
+        </div>
+        <p class="gc-instructions">
+          Enter each Capitaine's overall GC position at the end of <strong>{{ selectedGcPeriodName }}</strong>.
+          This is used to calculate each player's period score.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>🏔️ Capitaine GC Positions</h2>
+          <span class="hint">Overall race standings position at period end</span>
+        </div>
+        <div class="entry-grid">
+          <div class="entry-header">
+            <span>Capitaine</span>
+            <span>GC Position</span>
+            <span></span>
+          </div>
+          <div class="entry-row" *ngFor="let entry of gcEntries">
+            <span class="cyclist-name">{{ entry.cyclist }}</span>
+            <input
+              type="number"
+              min="1"
+              [(ngModel)]="entry.position"
+              placeholder="e.g. 3"
+              class="position-input"
+            />
+            <span></span>
+          </div>
+        </div>
+        <div class="entry-actions">
+          <button class="btn-save" (click)="downloadGcJson()" [disabled]="!hasAllGcPositions">
+            💾 Save (download gc.json)
+          </button>
+        </div>
+        <div *ngIf="!hasAllGcPositions" class="validation-note">
+          ⚠️ Enter a GC position for every Capitaine before saving.
+        </div>
+        <div *ngIf="gcSaveMessage" class="save-message">{{ gcSaveMessage }}</div>
+      </section>
+
+    </ng-container>
 
   </ng-container>
 </div>

@@ -2,7 +2,7 @@
 
   <!-- Loading / Error -->
   <div *ngIf="loading" class="state-message">
-    <span class="spinner">⏳</span> Chargement des scores…
+    <span class="spinner">⏳</span> Loading scores…
   </div>
   <div *ngIf="error" class="state-message error">⚠️ {{ error }}</div>
 
@@ -13,21 +13,21 @@
       <div class="card-header">
         <h2>🏅 Classement Général</h2>
         <button class="btn-copy" (click)="copyToClipboard()">
-          {{ copySuccess ? '✅ Copié !' : '📋 Copier pour le groupe' }}
+          {{ copySuccess ? '✅ Copied!' : '📋 Copy for group chat' }}
         </button>
       </div>
 
       <div *ngIf="totals.length === 0" class="empty-state">
-        Aucun résultat encore entré. Allez sur <strong>Étapes</strong> pour commencer.
+        No results entered yet. Head to <strong>Stages</strong> to get started.
       </div>
 
       <table *ngIf="totals.length > 0" class="standings-table">
         <thead>
           <tr>
             <th>#</th>
-            <th>Joueur</th>
-            <th>Étapes</th>
-            <th>Périodes</th>
+            <th>Player</th>
+            <th>Stages</th>
+            <th>Periods</th>
             <th>Total</th>
           </tr>
         </thead>
@@ -43,18 +43,18 @@
       </table>
 
       <div class="perfect-score-note">
-        Score parfait possible : 3 000 pts (2 100 étapes + 900 périodes)
+        Perfect score: 3,000 pts (2,100 stages + 900 periods)
       </div>
     </section>
 
     <!-- Stage-by-Stage Breakdown -->
     <section class="card" *ngIf="stageScores.length > 0">
       <div class="card-header">
-        <h2>📊 Détail par Étape</h2>
+        <h2>📊 Stage Breakdown</h2>
         <div class="period-filter">
-          <label>Période :</label>
+          <label>Period:</label>
           <select [(ngModel)]="selectedPeriod" [ngModelOptions]="{standalone: true}">
-            <option [value]="0">Toutes</option>
+            <option [value]="0">All</option>
             <option *ngFor="let p of periods" [value]="p.id">{{ p.name }}</option>
           </select>
         </div>
@@ -64,11 +64,11 @@
         <table class="stage-table">
           <thead>
             <tr>
-              <th>Joueur</th>
+              <th>Player</th>
               <th *ngFor="let s of filteredStageScores" class="stage-col">
-                Ét. {{ s.stageNumber }}
+                St. {{ s.stageNumber }}
               </th>
-              <th>Total Étapes</th>
+              <th>Stage Total</th>
             </tr>
           </thead>
           <tbody>
@@ -88,14 +88,14 @@
     <!-- Period Scores -->
     <section class="card" *ngIf="periodScores.length > 0">
       <div class="card-header">
-        <h2>🗓️ Scores de Période</h2>
+        <h2>🗓️ Period Scores</h2>
       </div>
       <table class="standings-table">
         <thead>
           <tr>
-            <th>Joueur</th>
+            <th>Player</th>
             <th *ngFor="let ps of periodScores">{{ data.config.periods[ps.periodId - 1].name }}</th>
-            <th>Total Périodes</th>
+            <th>Period Total</th>
           </tr>
         </thead>
         <tbody>

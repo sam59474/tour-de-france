@@ -45,7 +45,18 @@ export class TeamSetupComponent implements OnInit {
   }
 
   get teamsForPeriod(): PlayerTeam[] {
-    return this.data?.teams.periods.find(p => p.periodId === this.selectedPeriodId)?.teams ?? [];
+    const teams = this.data?.teams.periods.find(p => p.periodId === this.selectedPeriodId)?.teams ?? [];
+    return [...teams].sort((a, b) => a.player.localeCompare(b.player));
+  }
+
+  get stagesForPeriod() {
+    if (!this.data || !this.selectedPeriod) return [];
+    const stageNums = this.selectedPeriod.stages;
+    return this.data.stages.stages.filter(s => stageNums.includes(s.stageNumber));
+  }
+
+  stageTypeClass(type: string): string {
+    return type.toLowerCase().replace(/\s+/g, '-');
   }
 
   isElite(cyclist: string): boolean {

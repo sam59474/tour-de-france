@@ -131,11 +131,99 @@ $light-gray: #F3F4F6;
   font-weight: 600;
 }
 
+// Stage table inside period card
+.stages-table-wrapper {
+  overflow-x: auto;
+}
+
+.stages-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+
+  th {
+    background: $light-gray;
+    padding: 0.45rem 0.75rem;
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $gray;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  td {
+    padding: 0.45rem 0.75rem;
+    border-bottom: 1px solid $light-gray;
+    color: $dark;
+    vertical-align: middle;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: #FAFAFA; }
+}
+
+.stage-num {
+  font-weight: 700;
+  color: $blue;
+  width: 2rem;
+}
+
+.stage-date-cell {
+  white-space: nowrap;
+  color: $gray;
+}
+
+.stage-route {
+  font-weight: 500;
+}
+
+.stage-dist {
+  white-space: nowrap;
+  color: $gray;
+}
+
+.stage-winner-cell {
+  font-weight: 500;
+  color: darken($yellow, 25%);
+}
+
+.tbd { color: $gray; }
+
+.stage-type-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+
+  &.type-flat-stage            { background: #DBEAFE; color: #1D4ED8; }
+  &.type-hilly-stage           { background: #FEF3C7; color: #B45309; }
+  &.type-mountain-stage        { background: #DCF2DC; color: #166534; }
+  &.type-individual-time-trial { background: #EDE9FE; color: #6D28D9; }
+  &.type-team-time-trial       { background: #FCE7F3; color: #9D174D; }
+}
+
 // Teams Grid
 .teams-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .team-card {

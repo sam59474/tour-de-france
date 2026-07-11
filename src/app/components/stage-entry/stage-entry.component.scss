@@ -12,6 +12,40 @@ $light-gray: #F3F4F6;
   gap: 1.5rem;
 }
 
+.tab-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab-btn {
+  padding: 0.55rem 1.2rem;
+  border: 2px solid #D1D5DB;
+  border-radius: 6px;
+  background: $white;
+  color: $dark;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover { border-color: $blue; }
+
+  &.active {
+    background: $blue;
+    border-color: $blue;
+    color: $white;
+    font-weight: 600;
+  }
+}
+
+.gc-instructions {
+  padding: 0 1.25rem 1rem;
+  font-size: 0.875rem;
+  color: $dark;
+  margin: 0;
+}
+
 .state-message {
   text-align: center;
   padding: 3rem;
@@ -102,6 +136,33 @@ $light-gray: #F3F4F6;
   font-size: 0.82rem;
   color: $gray;
   font-style: italic;
+}
+
+.stage-distance {
+  font-size: 0.82rem;
+  color: $dark;
+  font-weight: 500;
+}
+
+.stage-winner {
+  font-size: 0.82rem;
+  color: darken($yellow, 25%);
+  font-weight: 600;
+}
+
+.stage-type-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  &.type-flat-stage        { background: #DBEAFE; color: #1D4ED8; }
+  &.type-hilly-stage       { background: #FEF3C7; color: #B45309; }
+  &.type-mountain-stage    { background: #DCF2DC; color: #166534; }
+  &.type-individual-time-trial { background: #EDE9FE; color: #6D28D9; }
+  &.type-team-time-trial   { background: #FCE7F3; color: #9D174D; }
 }
 
 .entry-grid {

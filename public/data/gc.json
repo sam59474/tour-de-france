@@ -1,9 +1,21 @@
 {
-  "note": "General Classification standings after each Period. Add after period ends.",
   "afterPeriod": [
     {
       "periodId": 1,
-      "standings": []
+      "standings": [
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 7
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 5
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 6
+        }
+      ]
     },
     {
       "periodId": 2,

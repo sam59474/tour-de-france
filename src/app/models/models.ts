@@ -60,6 +60,8 @@ export interface Stage {
   name: string;
   origin: string;
   destination: string;
+  distance: string;
+  type: 'Flat stage' | 'Hilly stage' | 'Mountain stage' | 'Individual time trial' | 'Team time trial';
   completed: boolean;
   results: CyclistResult[];
 }

@@ -1,6 +1,6 @@
 <div class="team-setup">
 
-  <div *ngIf="loading" class="state-message">⏳ Chargement…</div>
+  <div *ngIf="loading" class="state-message">⏳ Loading…</div>
   <div *ngIf="error" class="state-message error">⚠️ {{ error }}</div>
 
   <ng-container *ngIf="!loading && !error && data">
@@ -25,9 +25,29 @@
         <h2>{{ selectedPeriod.name }}</h2>
         <span class="period-subtitle">{{ selectedPeriod.subtitle }} · {{ selectedPeriod.dates }}</span>
       </div>
-      <div class="stages-list">
-        <span class="stages-label">Étapes :</span>
-        <span *ngFor="let s of selectedPeriod.stages" class="stage-badge">{{ s }}</span>
+      <div class="stages-table-wrapper">
+        <table class="stages-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Route</th>
+              <th>Distance</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let s of stagesForPeriod">
+              <td class="stage-num">{{ s.stageNumber }}</td>
+              <td class="stage-date-cell">{{ s.date | date:'MMM d' }}</td>
+              <td class="stage-route">{{ s.origin }} → {{ s.destination }}</td>
+              <td class="stage-dist">{{ s.distance }}</td>
+              <td class="stage-type-cell">
+                <span [class]="'stage-type-badge type-' + stageTypeClass(s.type)">{{ s.type }}</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -37,7 +57,7 @@
         <div class="team-header">
           <h3>{{ team.player }}</h3>
           <span *ngIf="getCapitaineSwitches(team.player) > 0" class="switch-badge">
-            {{ getCapitaineSwitches(team.player) }} changement(s) de capitaine
+            {{ getCapitaineSwitches(team.player) }} Capitaine switch(es)
           </span>
         </div>
 
@@ -65,9 +85,9 @@
 
           <!-- Stage Overrides -->
           <div *ngIf="hasOverrides(team)" class="overrides-section">
-            <div class="overrides-label">🔄 Remplacements</div>
+            <div class="overrides-label">🔄 Substitutions</div>
             <div *ngFor="let override of team.stageOverrides" class="override-row">
-              <span class="override-stages">Étapes {{ override.stages.join(', ') }}:</span>
+              <span class="override-stages">Stages {{ override.stages.join(', ') }}:</span>
               <span *ngIf="override.coequipiers.length" class="override-detail">
                 Coéquipiers → {{ override.coequipiers.join(', ') }}
               </span>
@@ -79,7 +99,7 @@
         </div>
 
         <ng-template #noTeam>
-          <div class="no-team">Équipe non encore sélectionnée</div>
+          <div class="no-team">Team not yet selected</div>
         </ng-template>
       </div>
     </div>
@@ -87,8 +107,8 @@
     <!-- Élites List -->
     <section class="card elite-card">
       <div class="card-header">
-        <h2>⭐ Les 7 Élites</h2>
-        <span class="hint">Chaque joueur ne peut choisir le même élite qu'une seule fois par période</span>
+        <h2>⭐ The 7 Élites</h2>
+        <span class="hint">Each player may only pick the same Élite once per period</span>
       </div>
       <div class="elites-list">
         <div *ngFor="let e of data.config.elites; let i = index" class="elite-row">

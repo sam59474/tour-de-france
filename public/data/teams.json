@@ -12,6 +12,10 @@
             {
               "stages": [2, 3, 4, 5, 6, 7],
               "coequipiers": ["Tobias Foss", "Mattias Skjelmose"]
+            },
+            {
+              "stages": [4, 5, 6, 7],
+              "elite": "Isaac Del Toro"
             }
           ]
         },
@@ -20,7 +24,11 @@
           "elite": "Tadej Pogačar",
           "capitaine": "Florian Lipowitz",
           "coequipiers": ["Tobias Halland Johannessen", "Cian Uijtdebroeks"],
-          "stageOverrides": []
+          "stageOverrides": [
+            {
+              "stages": [7],
+              "coequipiers": ["Tobias Halland Johannessen", "Daan Hoole"]
+            }]
         },
         {
           "player": "Margaret",
@@ -50,37 +58,37 @@
       "teams": [
         {
           "player": "Sam",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Tadej Pogačar",
+          "capitaine": "Juan Ayuso",
+          "coequipiers": ["Lenny Martinez", "Mattias Skjelmose"],
           "stageOverrides": []
         },
         {
           "player": "Ron",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Jonas Vingegaard",
+          "capitaine": "Florian Lipowitz",
+          "coequipiers": ["Tobias Halland Johannessen", "Egan Bernal"],
           "stageOverrides": []
         },
         {
           "player": "Margaret",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Jonas Vingegaard",
+          "capitaine": "Paul Seixas",
+          "coequipiers": ["Mattias Skjelmose", "Lenny Martinez"],
           "stageOverrides": []
         },
         {
           "player": "Kendall",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Jonas Vingegaard",
+          "capitaine": "Florian Lipowitz",
+          "coequipiers": ["Mattias Skjelmose", "Tobias Halland Johannessen"],
           "stageOverrides": []
         },
         {
           "player": "Luke",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Jasper Philipsen",
+          "capitaine": "Paul Seixas",
+          "coequipiers": ["Matteo Jorgenson", "Dorian Godon"],
           "stageOverrides": []
         }
       ]

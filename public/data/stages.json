@@ -7,68 +7,465 @@
       "name": "Stage 1",
       "origin": "Barcelona",
       "destination": "Barcelona",
-      "completed": false,
-      "results": []
+      "distance": "19.6 km",
+      "type": "Team time trial",
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Arnaud De Lie",
+          "position": 137
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 4
+        },
+        {
+          "cyclist": "Dylan Groenewegen",
+          "position": 9999
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 33
+        },
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 3
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 8
+        },
+        {
+          "cyclist": "Tobias Halland Johannessen",
+          "position": 20
+        },
+        {
+          "cyclist": "Cian Uijtdebroeks",
+          "position": 40
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 10
+        },
+        {
+          "cyclist": "Mauro Schmid",
+          "position": 163
+        },
+        {
+          "cyclist": "Romain Grégoire",
+          "position": 12
+        },
+        {
+          "cyclist": "Isaac Del Toro",
+          "position": 6
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 15
+        },
+        {
+          "cyclist": "Brandon McNulty",
+          "position": 57
+        }
+      ]
     },
     {
       "stageNumber": 2,
       "periodId": 1,
       "date": "2025-07-05",
       "name": "Stage 2",
-      "origin": "Barcelona",
+      "origin": "Tarragona",
       "destination": "Barcelona",
-      "completed": false,
-      "results": []
+      "distance": "168.5 km",
+      "type": "Hilly stage",
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Arnaud De Lie",
+          "position": 183
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 12
+        },
+        {
+          "cyclist": "Tobias Foss",
+          "position": 20
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 5
+        },
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 2
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 16
+        },
+        {
+          "cyclist": "Tobias Halland Johannessen",
+          "position": 6
+        },
+        {
+          "cyclist": "Cian Uijtdebroeks",
+          "position": 17
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 9
+        },
+        {
+          "cyclist": "Mauro Schmid",
+          "position": 49
+        },
+        {
+          "cyclist": "Romain Grégoire",
+          "position": 7
+        },
+        {
+          "cyclist": "Isaac Del Toro",
+          "position": 1
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 8
+        },
+        {
+          "cyclist": "Brandon McNulty",
+          "position": 39
+        }
+      ]
     },
     {
       "stageNumber": 3,
       "periodId": 1,
       "date": "2025-07-06",
       "name": "Stage 3",
-      "origin": "Barcelona",
-      "destination": "Barcelona",
-      "completed": false,
-      "results": []
+      "origin": "Granollers",
+      "destination": "Les Angles",
+      "distance": "195.9 km",
+      "type": "Mountain stage",
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Arnaud De Lie",
+          "position": 9999
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 10
+        },
+        {
+          "cyclist": "Tobias Foss",
+          "position": 171
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 11
+        },
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 1
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 7
+        },
+        {
+          "cyclist": "Tobias Halland Johannessen",
+          "position": 5
+        },
+        {
+          "cyclist": "Cian Uijtdebroeks",
+          "position": 27
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 4
+        },
+        {
+          "cyclist": "Mauro Schmid",
+          "position": 90
+        },
+        {
+          "cyclist": "Romain Grégoire",
+          "position": 75
+        },
+        {
+          "cyclist": "Isaac Del Toro",
+          "position": 9
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 13
+        },
+        {
+          "cyclist": "Brandon McNulty",
+          "position": 35
+        }
+      ]
     },
     {
       "stageNumber": 4,
       "periodId": 1,
       "date": "2025-07-07",
       "name": "Stage 4",
-      "origin": "Barcelona",
-      "destination": "Barcelona",
-      "completed": false,
-      "results": []
+      "origin": "Carcassonne",
+      "destination": "Foix",
+      "distance": "181.9 km",
+      "type": "Hilly stage",
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Isaac Del Toro",
+          "position": 34
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 38
+        },
+        {
+          "cyclist": "Tobias Foss",
+          "position": 93
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 39
+        },
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 33
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 60
+        },
+        {
+          "cyclist": "Tobias Halland Johannessen",
+          "position": 70
+        },
+        {
+          "cyclist": "Cian Uijtdebroeks",
+          "position": 86
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 50
+        },
+        {
+          "cyclist": "Mauro Schmid",
+          "position": 131
+        },
+        {
+          "cyclist": "Romain Grégoire",
+          "position": 22
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 69
+        },
+        {
+          "cyclist": "Brandon McNulty",
+          "position": 32
+        }
+      ]
     },
     {
       "stageNumber": 5,
       "periodId": 1,
       "date": "2025-07-08",
       "name": "Stage 5",
-      "origin": "Barcelona",
-      "destination": "Barcelona",
-      "completed": false,
-      "results": []
+      "origin": "Lannemezan",
+      "destination": "Pau",
+      "distance": "158.3 km",
+      "type": "Flat stage",
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Isaac Del Toro",
+          "position": 32
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 35
+        },
+        {
+          "cyclist": "Tobias Foss",
+          "position": 74
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 34
+        },
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 21
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 47
+        },
+        {
+          "cyclist": "Tobias Halland Johannessen",
+          "position": 39
+        },
+        {
+          "cyclist": "Cian Uijtdebroeks",
+          "position": 72
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 23
+        },
+        {
+          "cyclist": "Mauro Schmid",
+          "position": 119
+        },
+        {
+          "cyclist": "Romain Grégoire",
+          "position": 117
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 64
+        },
+        {
+          "cyclist": "Brandon McNulty",
+          "position": 38
+        }
+      ]
     },
     {
       "stageNumber": 6,
       "periodId": 1,
       "date": "2025-07-09",
       "name": "Stage 6",
-      "origin": "Barcelona",
-      "destination": "Bordeaux",
-      "completed": false,
-      "results": []
+      "origin": "Pau",
+      "destination": "Gavarnie-Gèdre",
+      "distance": "186.2 km",
+      "type": "Mountain stage",
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Isaac Del Toro",
+          "position": 3
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 7
+        },
+        {
+          "cyclist": "Tobias Foss",
+          "position": 40
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 8
+        },
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 1
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 6
+        },
+        {
+          "cyclist": "Tobias Halland Johannessen",
+          "position": 18
+        },
+        {
+          "cyclist": "Cian Uijtdebroeks",
+          "position": 9999
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 5
+        },
+        {
+          "cyclist": "Mauro Schmid",
+          "position": 148
+        },
+        {
+          "cyclist": "Romain Grégoire",
+          "position": 157
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 9
+        },
+        {
+          "cyclist": "Brandon McNulty",
+          "position": 20
+        }
+      ]
     },
     {
       "stageNumber": 7,
       "periodId": 1,
       "date": "2025-07-10",
       "name": "Stage 7",
-      "origin": "Bordeaux",
+      "origin": "Hagetmau",
       "destination": "Bordeaux",
-      "completed": false,
-      "results": []
+      "distance": "175.1 km",
+      "type": "Flat stage",
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Isaac Del Toro",
+          "position": 57
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 62
+        },
+        {
+          "cyclist": "Tobias Foss",
+          "position": 122
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 63
+        },
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 56
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 48
+        },
+        {
+          "cyclist": "Tobias Halland Johannessen",
+          "position": 84
+        },
+        {
+          "cyclist": "Daan Hoole",
+          "position": 137
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 41
+        },
+        {
+          "cyclist": "Mauro Schmid",
+          "position": 132
+        },
+        {
+          "cyclist": "Romain Grégoire",
+          "position": 128
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 90
+        },
+        {
+          "cyclist": "Brandon McNulty",
+          "position": 50
+        }
+      ]
     },
     {
       "stageNumber": 8,
@@ -76,7 +473,9 @@
       "date": "2025-07-11",
       "name": "Stage 8",
       "origin": "Périgueux",
-      "destination": "Périgueux",
+      "destination": "Bergerac",
+      "distance": "180.4 km",
+      "type": "Flat stage",
       "completed": false,
       "results": []
     },
@@ -85,118 +484,142 @@
       "periodId": 2,
       "date": "2025-07-12",
       "name": "Stage 9",
-      "origin": "Périgueux",
-      "destination": "Périgueux",
+      "origin": "Malemort",
+      "destination": "Ussel",
+      "distance": "185.5 km",
+      "type": "Hilly stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 10,
       "periodId": 2,
-      "date": "2025-07-13",
+      "date": "2025-07-14",
       "name": "Stage 10",
-      "origin": "Périgueux",
-      "destination": "Périgueux",
+      "origin": "Aurillac",
+      "destination": "Le Lioran",
+      "distance": "166.6 km",
+      "type": "Mountain stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 11,
       "periodId": 2,
-      "date": "2025-07-14",
+      "date": "2025-07-15",
       "name": "Stage 11",
-      "origin": "Périgueux",
-      "destination": "Périgueux",
+      "origin": "Vichy",
+      "destination": "Nevers",
+      "distance": "161.3 km",
+      "type": "Flat stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 12,
       "periodId": 2,
-      "date": "2025-07-15",
+      "date": "2025-07-16",
       "name": "Stage 12",
-      "origin": "Périgueux",
-      "destination": "Périgueux",
+      "origin": "Circuit de Nevers Magny-Cours",
+      "destination": "Chalon-sur-Saône",
+      "distance": "179.1 km",
+      "type": "Flat stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 13,
       "periodId": 2,
-      "date": "2025-07-16",
+      "date": "2025-07-17",
       "name": "Stage 13",
-      "origin": "Périgueux",
-      "destination": "Périgueux",
+      "origin": "Dole",
+      "destination": "Belfort",
+      "distance": "205.8 km",
+      "type": "Hilly stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 14,
       "periodId": 2,
-      "date": "2025-07-17",
+      "date": "2025-07-18",
       "name": "Stage 14",
-      "origin": "Périgueux",
+      "origin": "Mulhouse",
       "destination": "Le Markstein Fellering",
+      "distance": "155.3 km",
+      "type": "Mountain stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 15,
       "periodId": 3,
-      "date": "2025-07-18",
+      "date": "2025-07-19",
       "name": "Stage 15",
       "origin": "Champagnole",
-      "destination": "Champagnole",
+      "destination": "Plateau de Solaison",
+      "distance": "183.9 km",
+      "type": "Mountain stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 16,
       "periodId": 3,
-      "date": "2025-07-19",
+      "date": "2025-07-21",
       "name": "Stage 16",
-      "origin": "Champagnole",
-      "destination": "Champagnole",
+      "origin": "Évian-les-Bains",
+      "destination": "Thonon-les-Bains",
+      "distance": "26.1 km",
+      "type": "Individual time trial",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 17,
       "periodId": 3,
-      "date": "2025-07-20",
+      "date": "2025-07-22",
       "name": "Stage 17",
-      "origin": "Champagnole",
-      "destination": "Champagnole",
+      "origin": "Chambéry",
+      "destination": "Voiron",
+      "distance": "174.7 km",
+      "type": "Flat stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 18,
       "periodId": 3,
-      "date": "2025-07-21",
+      "date": "2025-07-23",
       "name": "Stage 18",
-      "origin": "Champagnole",
-      "destination": "Champagnole",
+      "origin": "Voiron",
+      "destination": "Orcières-Merlette",
+      "distance": "185.2 km",
+      "type": "Mountain stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 19,
       "periodId": 3,
-      "date": "2025-07-22",
+      "date": "2025-07-24",
       "name": "Stage 19",
-      "origin": "Champagnole",
-      "destination": "Champagnole",
+      "origin": "Gap",
+      "destination": "Alpe d'Huez",
+      "distance": "127.9 km",
+      "type": "Mountain stage",
       "completed": false,
       "results": []
     },
     {
       "stageNumber": 20,
       "periodId": 3,
-      "date": "2025-07-23",
+      "date": "2025-07-25",
       "name": "Stage 20",
-      "origin": "Champagnole",
-      "destination": "Champagnole",
+      "origin": "Le Bourg-d'Oisans",
+      "destination": "Alpe d'Huez",
+      "distance": "170.9 km",
+      "type": "Mountain stage",
       "completed": false,
       "results": []
     },
@@ -205,8 +628,10 @@
       "periodId": 3,
       "date": "2025-07-26",
       "name": "Stage 21",
-      "origin": "Champagnole",
-      "destination": "Paris",
+      "origin": "Thoiry",
+      "destination": "Paris (Champs-Élysées)",
+      "distance": "133 km",
+      "type": "Flat stage",
       "completed": false,
       "results": []
     }

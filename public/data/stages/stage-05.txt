@@ -1,0 +1,724 @@
+1
+	 
+O. KOOIJ
+	DECATHLON CMA CGM TEAM 	03h 29' 07'' 	- 	B : 10'' 	-
+2
+	 
+M. KANTER
+	XDS ASTANA TEAM 	03h 29' 07'' 	- 	B : 6'' 	-
+3
+	 
+T. MERLIER
+	SOUDAL QUICK-STEP 	03h 29' 07'' 	- 	B : 4'' 	-
+4
+	 
+H. ARTZ
+	LOTTO INTERMARCHE 	03h 29' 07'' 	- 	- 	-
+5
+	 
+J. PHILIPSEN
+	ALPECIN-PREMIER TECH 	03h 29' 07'' 	- 	- 	-
+6
+	 
+B. GIRMAY
+	NSN CYCLING TEAM 	03h 29' 07'' 	- 	- 	-
+7
+	 
+M. PEDERSEN
+	LIDL-TREK 	03h 29' 07'' 	- 	- 	-
+8
+	 
+M. FRETIN
+	COFIDIS 	03h 29' 07'' 	- 	- 	-
+9
+	 
+A. TURGIS
+	TOTALENERGIES 	03h 29' 07'' 	- 	- 	-
+10
+	 
+S. WAERENSKJOLD
+	UNO-X MOBILITY 	03h 29' 07'' 	- 	- 	-
+11
+	 
+J. BERCKMOES
+	LOTTO INTERMARCHE 	03h 29' 07'' 	- 	- 	-
+12
+	 
+P. ACKERMANN
+	TEAM JAYCO ALULA 	03h 29' 07'' 	- 	- 	-
+13
+	 
+C. RUSSO
+	GROUPAMA-FDJ UNITED 	03h 29' 07'' 	- 	- 	-
+14
+	 
+R. PLUIMERS
+	TUDOR PRO CYCLING TEAM 	03h 29' 07'' 	- 	- 	-
+15
+	 
+D. GODON
+	NETCOMPANY INEOS CYCLING TEAM 	03h 29' 07'' 	- 	- 	-
+16
+	 
+P. BITTNER
+	TEAM PICNIC POSTNL 	03h 29' 07'' 	- 	- 	-
+17
+	 
+F. GAVIRIA
+	CAJA RURAL-SEGUROS RGA 	03h 29' 07'' 	- 	- 	-
+18
+	 
+P. BAUHAUS
+	BAHRAIN VICTORIOUS 	03h 29' 07'' 	- 	- 	-
+19
+	 
+M. TEUNISSEN
+	XDS ASTANA TEAM 	03h 29' 07'' 	- 	- 	-
+20
+	 
+A. GATE
+	XDS ASTANA TEAM 	03h 29' 14'' 	+ 00h 00' 07'' 	- 	-
+21
+	 
+T. POGACAR
+	UAE TEAM EMIRATES XRG 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+22
+	 
+R. EVENEPOEL
+	RED BULL - BORA - HANSGROHE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+23
+	 
+P. SEIXAS
+	DECATHLON CMA CGM TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+24
+	 
+T. PIDCOCK
+	PINARELLO-Q36.5 PRO CYCLING TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+25
+	 
+R. CARAPAZ
+	EF EDUCATION - EASYPOST 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+26
+	 
+I. VAN WILDER
+	SOUDAL QUICK-STEP 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+27
+	 
+M. VAN GILS
+	RED BULL - BORA - HANSGROHE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+28
+	 
+T. ARENSMAN
+	NETCOMPANY INEOS CYCLING TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+29
+	 
+S. QUINN
+	EF EDUCATION - EASYPOST 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+30
+	 
+T. VAN ASBROECK
+	NSN CYCLING TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+31
+	 
+M. VACEK
+	LIDL-TREK 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+32
+	 
+I. DEL TORO
+	UAE TEAM EMIRATES XRG 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+33
+	 
+M. JORGENSON
+	TEAM VISMA | LEASE A BIKE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+34
+	 
+M. SKJELMOSE
+	LIDL-TREK 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+35
+	 
+J. AYUSO
+	LIDL-TREK 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+36
+	 
+R. DEBRUYNE
+	ALPECIN-PREMIER TECH 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+37
+	 
+J. JEGAT
+	TOTALENERGIES 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+38
+	 
+B. MCNULTY
+	UAE TEAM EMIRATES XRG 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+39
+	 
+T. JOHANNESSEN
+	UNO-X MOBILITY 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+40
+	 
+Y. VOISARD
+	TUDOR PRO CYCLING TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+41
+	 
+A. TIBERI
+	BAHRAIN VICTORIOUS 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+42
+	 
+S. HIGUITA
+	XDS ASTANA TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+43
+	 
+K. VAUQUELIN
+	NETCOMPANY INEOS CYCLING TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+44
+	 
+E. BERNAL
+	NETCOMPANY INEOS CYCLING TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+45
+	 
+H. TEJADA
+	XDS ASTANA TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+46
+	 
+J. RICKAERT
+	ALPECIN-PREMIER TECH 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+47
+	 
+F. LIPOWITZ
+	RED BULL - BORA - HANSGROHE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+48
+	 
+G. MARTIN GUYONNET
+	GROUPAMA-FDJ UNITED 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+49
+	 
+T. SKUJINS
+	LIDL-TREK 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+50
+	 
+C. BOL
+	DECATHLON CMA CGM TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+51
+	 
+H. PAGE
+	COFIDIS 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+52
+	 
+D. PIGANZOLI
+	TEAM VISMA | LEASE A BIKE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+53
+	 
+J. VINGEGAARD
+	TEAM VISMA | LEASE A BIKE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+54
+	 
+T. TRÆEN
+	UNO-X MOBILITY 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+55
+	 
+J. DELBOVE
+	TOTALENERGIES 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+56
+	 
+R. GARCIA
+	MOVISTAR TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+57
+	 
+D. BALLERINI
+	XDS ASTANA TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+58
+	 
+J. VAN DEN BERG
+	TEAM PICNIC POSTNL 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+59
+	 
+J. CEPEDA
+	MOVISTAR TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+60
+	 
+F. BIESTERBOS
+	TEAM PICNIC POSTNL 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+61
+	 
+P. ALLEGAERT
+	COFIDIS 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+62
+	 
+F. GROSSSCHARTNER
+	UAE TEAM EMIRATES XRG 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+63
+	 
+A. YATES
+	UAE TEAM EMIRATES XRG 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+64
+	 
+L. MARTINEZ
+	BAHRAIN VICTORIOUS 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+65
+	 
+G. ZIMMERMANN
+	LOTTO INTERMARCHE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+66
+	 
+L. ASKEY
+	NSN CYCLING TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+67
+	 
+L. GERMANI
+	GROUPAMA-FDJ UNITED 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+68
+	 
+I. IZAGIRRE
+	COFIDIS 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+69
+	 
+B. ARMIRAIL
+	TEAM VISMA | LEASE A BIKE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+70
+	 
+E. RUBIO
+	MOVISTAR TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+71
+	 
+J. PARRA
+	CAJA RURAL-SEGUROS RGA 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+72
+	 
+C. UIJTDEBROEKS
+	MOVISTAR TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+73
+	 
+D. HOOLE
+	DECATHLON CMA CGM TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+74
+	 
+T. FOSS
+	NETCOMPANY INEOS CYCLING TEAM 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+75
+	 
+M. LE BERRE
+	TOTALENERGIES 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+76
+	 
+N. POLITT
+	UAE TEAM EMIRATES XRG 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+77
+	 
+M. CATTANEO
+	RED BULL - BORA - HANSGROHE 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+78
+	 
+B. O'CONNOR
+	TEAM JAYCO ALULA 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+79
+	 
+T. MARSMAN
+	ALPECIN-PREMIER TECH 	03h 29' 21'' 	+ 00h 00' 14'' 	- 	-
+80
+	 
+E. PLANCKAERT
+	ALPECIN-PREMIER TECH 	03h 29' 47'' 	+ 00h 00' 40'' 	- 	-
+81
+	 
+J. STEWART
+	NSN CYCLING TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+82
+	 
+J. ABRAHAMSEN
+	UNO-X MOBILITY 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+83
+	 
+X. AZPARREN IRURZUN
+	PINARELLO-Q36.5 PRO CYCLING TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+84
+	 
+K. NEILANDS
+	NSN CYCLING TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+85
+	 
+Q. SIMMONS
+	LIDL-TREK 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+86
+	 
+X. MEURISSE
+	PINARELLO-Q36.5 PRO CYCLING TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+87
+	 
+N. DENZ
+	RED BULL - BORA - HANSGROHE 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+88
+	 
+S. KUSS
+	TEAM VISMA | LEASE A BIKE 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+89
+	 
+D. GEE
+	LIDL-TREK 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+90
+	 
+N. VINOKUROV
+	XDS ASTANA TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+91
+	 
+T. WELLENS
+	UAE TEAM EMIRATES XRG 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+92
+	 
+T. VAN DIJKE
+	RED BULL - BORA - HANSGROHE 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+93
+	 
+L. CRAPS
+	LOTTO INTERMARCHE 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+94
+	 
+B. VAN MOER
+	PINARELLO-Q36.5 PRO CYCLING TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+95
+	 
+L. VAN EETVELT
+	LOTTO INTERMARCHE 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+96
+	 
+Q. HERMANS
+	PINARELLO-Q36.5 PRO CYCLING TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+97
+	 
+C. VERONA
+	LIDL-TREK 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+98
+	 
+N. PRODHOMME
+	DECATHLON CMA CGM TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+99
+	 
+N. OLIVEIRA
+	MOVISTAR TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+100
+	 
+M. CORT NIELSEN
+	UNO-X MOBILITY 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+101
+	 
+J. DEGENKOLB
+	TEAM PICNIC POSTNL 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+102
+	 
+G. BENNETT
+	NSN CYCLING TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+103
+	 
+A. SKAARSETH
+	UNO-X MOBILITY 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+104
+	 
+J. ALAPHILIPPE
+	TUDOR PRO CYCLING TEAM 	03h 29' 54'' 	+ 00h 00' 47'' 	- 	-
+105
+	 
+R. STANNARD
+	BAHRAIN VICTORIOUS 	03h 30' 11'' 	+ 00h 01' 04'' 	- 	-
+106
+	 
+M. KWIATKOWSKI
+	NETCOMPANY INEOS CYCLING TEAM 	03h 30' 11'' 	+ 00h 01' 04'' 	- 	-
+107
+	 
+J. ROMO
+	MOVISTAR TEAM 	03h 30' 18'' 	+ 00h 01' 11'' 	- 	-
+108
+	 
+M. MOHORIC
+	BAHRAIN VICTORIOUS 	03h 30' 26'' 	+ 00h 01' 19'' 	- 	-
+109
+	 
+F. GANNA
+	NETCOMPANY INEOS CYCLING TEAM 	03h 30' 26'' 	+ 00h 01' 19'' 	- 	-
+110
+	 
+F. VERMEERSCH
+	UAE TEAM EMIRATES XRG 	03h 30' 26'' 	+ 00h 01' 19'' 	- 	-
+111
+	 
+E. AFFINI
+	TEAM VISMA | LEASE A BIKE 	03h 30' 26'' 	+ 00h 01' 19'' 	- 	-
+112
+	 
+B. VEISTROFFER
+	LOTTO INTERMARCHE 	03h 30' 26'' 	+ 00h 01' 19'' 	- 	-
+113
+	 
+P. CASTRILLO
+	MOVISTAR TEAM 	03h 30' 43'' 	+ 00h 01' 36'' 	- 	-
+114
+	 
+F. ENGELHARDT
+	TEAM JAYCO ALULA 	03h 30' 43'' 	+ 00h 01' 36'' 	- 	-
+115
+	 
+A. DELETTRE
+	TOTALENERGIES 	03h 30' 43'' 	+ 00h 01' 36'' 	- 	-
+116
+	 
+N. MÄRKL
+	TEAM PICNIC POSTNL 	03h 30' 52'' 	+ 00h 01' 45'' 	- 	-
+117
+	 
+R. GREGOIRE
+	GROUPAMA-FDJ UNITED 	03h 30' 52'' 	+ 00h 01' 45'' 	- 	-
+118
+	 
+C. BRAZ AFONSO
+	GROUPAMA-FDJ UNITED 	03h 30' 52'' 	+ 00h 01' 45'' 	- 	-
+119
+	 
+M. SCHMID
+	TEAM JAYCO ALULA 	03h 31' 08'' 	+ 00h 02' 01'' 	- 	-
+120
+	 
+J. HINDLEY
+	RED BULL - BORA - HANSGROHE 	03h 31' 08'' 	+ 00h 02' 01'' 	- 	-
+121
+	 
+P. HAGENES
+	TEAM VISMA | LEASE A BIKE 	03h 31' 12'' 	+ 00h 02' 05'' 	- 	-
+122
+	 
+M. HALLER
+	TUDOR PRO CYCLING TEAM 	03h 31' 12'' 	+ 00h 02' 05'' 	- 	-
+123
+	 
+M. TRENTIN
+	TUDOR PRO CYCLING TEAM 	03h 31' 12'' 	+ 00h 02' 05'' 	- 	-
+124
+	 
+T. GUERNALEC
+	TOTALENERGIES 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+125
+	 
+L. SLOCK
+	LOTTO INTERMARCHE 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+126
+	 
+W. BARGUIL
+	TEAM PICNIC POSTNL 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+127
+	 
+Q. PACHER
+	GROUPAMA-FDJ UNITED 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+128
+	 
+M. VAN DER POEL
+	ALPECIN-PREMIER TECH 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+129
+	 
+A. BALDERSTONE
+	CAJA RURAL-SEGUROS RGA 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+130
+	 
+K. ASGREEN
+	EF EDUCATION - EASYPOST 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+131
+	 
+F. VAN DEN BROEK
+	TEAM PICNIC POSTNL 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+132
+	 
+R. DHONDT
+	TEAM PICNIC POSTNL 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+133
+	 
+A. KIRSCH
+	COFIDIS 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+134
+	 
+B. HEALY
+	EF EDUCATION - EASYPOST 	03h 31' 18'' 	+ 00h 02' 11'' 	- 	-
+135
+	 
+V. VAN MECHELEN
+	BAHRAIN VICTORIOUS 	03h 31' 30'' 	+ 00h 02' 23'' 	- 	-
+136
+	 
+M. RICCITELLO
+	DECATHLON CMA CGM TEAM 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+137
+	 
+T. BENOOT
+	DECATHLON CMA CGM TEAM 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+138
+	 
+M. VERCHER
+	TOTALENERGIES 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+139
+	 
+A. JOHANNESSEN
+	UNO-X MOBILITY 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+140
+	 
+A. CHARMIG
+	UNO-X MOBILITY 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+141
+	 
+A. BAUDIN
+	EF EDUCATION - EASYPOST 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+142
+	 
+V. PARET PEINTRE
+	SOUDAL QUICK-STEP 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+143
+	 
+J. BIERMANS
+	COFIDIS 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+144
+	 
+A. ARANBURU
+	COFIDIS 	03h 31' 42'' 	+ 00h 02' 35'' 	- 	-
+145
+	 
+B. THOMAS
+	COFIDIS 	03h 32' 08'' 	+ 00h 03' 01'' 	- 	-
+146
+	 
+S. DILLIER
+	ALPECIN-PREMIER TECH 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+147
+	 
+F. WRIGHT
+	PINARELLO-Q36.5 PRO CYCLING TEAM 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+148
+	 
+K. GRADEK
+	BAHRAIN VICTORIOUS 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+149
+	 
+E. COSTIOU
+	GROUPAMA-FDJ UNITED 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+150
+	 
+P. EENKHOORN
+	SOUDAL QUICK-STEP 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+151
+	 
+M. VALGREN
+	EF EDUCATION - EASYPOST 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+152
+	 
+L. DURBRIDGE
+	TEAM JAYCO ALULA 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+153
+	 
+M. WALKER
+	EF EDUCATION - EASYPOST 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+154
+	 
+D. HOWSON
+	PINARELLO-Q36.5 PRO CYCLING TEAM 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+155
+	 
+D. CARUSO
+	BAHRAIN VICTORIOUS 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+156
+	 
+M. FRIGO
+	NSN CYCLING TEAM 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+157
+	 
+M. HIRSCHI
+	TUDOR PRO CYCLING TEAM 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+158
+	 
+S. VELASCO
+	XDS ASTANA TEAM 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+159
+	 
+J. TRATNIK
+	RED BULL - BORA - HANSGROHE 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+160
+	 
+L. PLAPP
+	TEAM JAYCO ALULA 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+161
+	 
+C. HARPER
+	PINARELLO-Q36.5 PRO CYCLING TEAM 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+162
+	 
+M. HEßMANN
+	MOVISTAR TEAM 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+163
+	 
+M. STORER
+	TUDOR PRO CYCLING TEAM 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+164
+	 
+E. VERSTRYNGE
+	ALPECIN-PREMIER TECH 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+165
+	 
+N. BREUILLARD
+	TOTALENERGIES 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+166
+	 
+G. STEINHAUSER
+	EF EDUCATION - EASYPOST 	03h 32' 27'' 	+ 00h 03' 20'' 	- 	-
+167
+	 
+J. TARLING
+	NETCOMPANY INEOS CYCLING TEAM 	03h 32' 36'' 	+ 00h 03' 29'' 	- 	-
+168
+	 
+S. BERWICK
+	CAJA RURAL-SEGUROS RGA 	03h 33' 37'' 	+ 00h 04' 30'' 	- 	-
+169
+	 
+J. NICOLAU
+	CAJA RURAL-SEGUROS RGA 	03h 33' 37'' 	+ 00h 04' 30'' 	- 	-
+170
+	 
+V. CAMPENAERTS
+	TEAM VISMA | LEASE A BIKE 	03h 33' 57'' 	+ 00h 04' 50'' 	- 	-
+171
+	 
+S. OLDANI
+	CAJA RURAL-SEGUROS RGA 	03h 34' 04'' 	+ 00h 04' 57'' 	- 	-
+172
+	 
+J. OTRUBA
+	CAJA RURAL-SEGUROS RGA 	03h 34' 04'' 	+ 00h 04' 57'' 	- 	-
+173
+	 
+L. VERVAEKE
+	SOUDAL QUICK-STEP 	03h 34' 37'' 	+ 00h 05' 30'' 	- 	-
+174
+	 
+J. STUYVEN
+	SOUDAL QUICK-STEP 	03h 34' 37'' 	+ 00h 05' 30'' 	- 	-
+175
+	 
+D. VAN BAARLE
+	SOUDAL QUICK-STEP 	03h 34' 37'' 	+ 00h 05' 30'' 	- 	-
+176
+	 
+B. VAN LERBERGHE
+	SOUDAL QUICK-STEP 	03h 34' 37'' 	+ 00h 05' 30'' 	- 	-
+177
+	 
+A. PARET PEINTRE
+	DECATHLON CMA CGM TEAM 	03h 34' 45'' 	+ 00h 05' 38'' 	- 	-
+178
+	 
+M. LOUVEL
+	NSN CYCLING TEAM 	03h 35' 45'' 	+ 00h 06' 38'' 	- 	-
+179
+	 
+M. MATTHEWS
+	TEAM JAYCO ALULA 	03h 35' 59'' 	+ 00h 06' 52'' 	- 	-
+180
+	 
+A. MOLENAAR
+	CAJA RURAL-SEGUROS RGA 	03h 36' 07'' 	+ 00h 07' 00'' 	- 	-
+181
+	 
+A. DE KLEIJN
+	TUDOR PRO CYCLING TEAM 	03h 40' 08'' 	+ 00h 11' 01'' 	- 	-

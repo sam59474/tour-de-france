@@ -34,7 +34,10 @@ export class ScoringService {
       if (override.stages.includes(stageNumber)) {
         if (override.elite !== undefined) elite = override.elite;
         if (override.capitaine !== undefined) capitaine = override.capitaine;
-        coequipiers = [...override.coequipiers];
+        // Only replace coequipiers if the override actually specifies them
+        if (override.coequipiers && override.coequipiers.length > 0) {
+          coequipiers = [...override.coequipiers];
+        }
       }
     }
 
@@ -80,10 +83,14 @@ export class ScoringService {
       return { player: team.player, roster, positions, topThreeSum, hasStageWin };
     });
 
-    // Rank players by topThreeSum (lower = better = rank 1)
+    // Rank players by topThreeSum (lower = better = rank 1), ties get the same rank
     const sorted = [...playerData].sort((a, b) => a.topThreeSum - b.topThreeSum);
     const rankMap = new Map<string, number>();
-    sorted.forEach((p, i) => rankMap.set(p.player, i + 1));
+    sorted.forEach((p, i) => {
+      // Find the rank of the first player with this same sum
+      const firstWithSameSum = sorted.findIndex(s => s.topThreeSum === p.topThreeSum);
+      rankMap.set(p.player, firstWithSameSum + 1);
+    });
 
     const playerScores: PlayerStageScore[] = playerData.map(pd => {
       const P = rankMap.get(pd.player) ?? N;
@@ -153,11 +160,14 @@ export class ScoringService {
       return { player: team.player, capitaine: team.capitaine, gcPos, C };
     });
 
-    // Rank by GC position (lower = better = rank 1); null = unranked = last
+    // Rank by GC position (lower = better = rank 1), ties get the same rank; null = last
     const withGc = playerData.filter(p => p.gcPos !== null);
     const sortedByGc = [...withGc].sort((a, b) => (a.gcPos ?? 9999) - (b.gcPos ?? 9999));
     const rankMap = new Map<string, number>();
-    sortedByGc.forEach((p, i) => rankMap.set(p.player, i + 1));
+    sortedByGc.forEach((p, i) => {
+      const firstWithSamePos = sortedByGc.findIndex(s => s.gcPos === p.gcPos);
+      rankMap.set(p.player, firstWithSamePos + 1);
+    });
     // Players with no GC data get rank N
     playerData.filter(p => p.gcPos === null).forEach(p => rankMap.set(p.player, N));
 
