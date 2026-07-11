@@ -3,7 +3,7 @@
     {
       "stageNumber": 1,
       "periodId": 1,
-      "date": "2025-07-04",
+      "date": "2026-07-04",
       "name": "Stage 1",
       "origin": "Barcelona",
       "destination": "Barcelona",
@@ -36,7 +36,7 @@
           "position": 8
         },
         {
-          "cyclist": "Tobias Halland Johannessen",
+          "cyclist": "Tobias Johannessen",
           "position": 20
         },
         {
@@ -72,7 +72,7 @@
     {
       "stageNumber": 2,
       "periodId": 1,
-      "date": "2025-07-05",
+      "date": "2026-07-05",
       "name": "Stage 2",
       "origin": "Tarragona",
       "destination": "Barcelona",
@@ -105,7 +105,7 @@
           "position": 16
         },
         {
-          "cyclist": "Tobias Halland Johannessen",
+          "cyclist": "Tobias Johannessen",
           "position": 6
         },
         {
@@ -141,7 +141,7 @@
     {
       "stageNumber": 3,
       "periodId": 1,
-      "date": "2025-07-06",
+      "date": "2026-07-06",
       "name": "Stage 3",
       "origin": "Granollers",
       "destination": "Les Angles",
@@ -174,7 +174,7 @@
           "position": 7
         },
         {
-          "cyclist": "Tobias Halland Johannessen",
+          "cyclist": "Tobias Johannessen",
           "position": 5
         },
         {
@@ -210,7 +210,7 @@
     {
       "stageNumber": 4,
       "periodId": 1,
-      "date": "2025-07-07",
+      "date": "2026-07-07",
       "name": "Stage 4",
       "origin": "Carcassonne",
       "destination": "Foix",
@@ -243,7 +243,7 @@
           "position": 60
         },
         {
-          "cyclist": "Tobias Halland Johannessen",
+          "cyclist": "Tobias Johannessen",
           "position": 70
         },
         {
@@ -275,7 +275,7 @@
     {
       "stageNumber": 5,
       "periodId": 1,
-      "date": "2025-07-08",
+      "date": "2026-07-08",
       "name": "Stage 5",
       "origin": "Lannemezan",
       "destination": "Pau",
@@ -308,7 +308,7 @@
           "position": 47
         },
         {
-          "cyclist": "Tobias Halland Johannessen",
+          "cyclist": "Tobias Johannessen",
           "position": 39
         },
         {
@@ -340,7 +340,7 @@
     {
       "stageNumber": 6,
       "periodId": 1,
-      "date": "2025-07-09",
+      "date": "2026-07-09",
       "name": "Stage 6",
       "origin": "Pau",
       "destination": "Gavarnie-Gèdre",
@@ -373,7 +373,7 @@
           "position": 6
         },
         {
-          "cyclist": "Tobias Halland Johannessen",
+          "cyclist": "Tobias Johannessen",
           "position": 18
         },
         {
@@ -405,7 +405,7 @@
     {
       "stageNumber": 7,
       "periodId": 1,
-      "date": "2025-07-10",
+      "date": "2026-07-10",
       "name": "Stage 7",
       "origin": "Hagetmau",
       "destination": "Bordeaux",
@@ -438,7 +438,7 @@
           "position": 48
         },
         {
-          "cyclist": "Tobias Halland Johannessen",
+          "cyclist": "Tobias Johannessen",
           "position": 84
         },
         {
@@ -470,7 +470,7 @@
     {
       "stageNumber": 8,
       "periodId": 2,
-      "date": "2025-07-11",
+      "date": "2026-07-11",
       "name": "Stage 8",
       "origin": "Périgueux",
       "destination": "Bergerac",
@@ -482,7 +482,7 @@
     {
       "stageNumber": 9,
       "periodId": 2,
-      "date": "2025-07-12",
+      "date": "2026-07-12",
       "name": "Stage 9",
       "origin": "Malemort",
       "destination": "Ussel",
@@ -494,7 +494,7 @@
     {
       "stageNumber": 10,
       "periodId": 2,
-      "date": "2025-07-14",
+      "date": "2026-07-14",
       "name": "Stage 10",
       "origin": "Aurillac",
       "destination": "Le Lioran",
@@ -506,7 +506,7 @@
     {
       "stageNumber": 11,
       "periodId": 2,
-      "date": "2025-07-15",
+      "date": "2026-07-15",
       "name": "Stage 11",
       "origin": "Vichy",
       "destination": "Nevers",
@@ -518,7 +518,7 @@
     {
       "stageNumber": 12,
       "periodId": 2,
-      "date": "2025-07-16",
+      "date": "2026-07-16",
       "name": "Stage 12",
       "origin": "Circuit de Nevers Magny-Cours",
       "destination": "Chalon-sur-Saône",
@@ -530,7 +530,7 @@
     {
       "stageNumber": 13,
       "periodId": 2,
-      "date": "2025-07-17",
+      "date": "2026-07-17",
       "name": "Stage 13",
       "origin": "Dole",
       "destination": "Belfort",
@@ -542,7 +542,7 @@
     {
       "stageNumber": 14,
       "periodId": 2,
-      "date": "2025-07-18",
+      "date": "2026-07-18",
       "name": "Stage 14",
       "origin": "Mulhouse",
       "destination": "Le Markstein Fellering",
@@ -554,7 +554,7 @@
     {
       "stageNumber": 15,
       "periodId": 3,
-      "date": "2025-07-19",
+      "date": "2026-07-19",
       "name": "Stage 15",
       "origin": "Champagnole",
       "destination": "Plateau de Solaison",
@@ -566,7 +566,7 @@
     {
       "stageNumber": 16,
       "periodId": 3,
-      "date": "2025-07-21",
+      "date": "2026-07-21",
       "name": "Stage 16",
       "origin": "Évian-les-Bains",
       "destination": "Thonon-les-Bains",
@@ -578,7 +578,7 @@
     {
       "stageNumber": 17,
       "periodId": 3,
-      "date": "2025-07-22",
+      "date": "2026-07-22",
       "name": "Stage 17",
       "origin": "Chambéry",
       "destination": "Voiron",
@@ -590,7 +590,7 @@
     {
       "stageNumber": 18,
       "periodId": 3,
-      "date": "2025-07-23",
+      "date": "2026-07-23",
       "name": "Stage 18",
       "origin": "Voiron",
       "destination": "Orcières-Merlette",
@@ -602,7 +602,7 @@
     {
       "stageNumber": 19,
       "periodId": 3,
-      "date": "2025-07-24",
+      "date": "2026-07-24",
       "name": "Stage 19",
       "origin": "Gap",
       "destination": "Alpe d'Huez",
@@ -614,7 +614,7 @@
     {
       "stageNumber": 20,
       "periodId": 3,
-      "date": "2025-07-25",
+      "date": "2026-07-25",
       "name": "Stage 20",
       "origin": "Le Bourg-d'Oisans",
       "destination": "Alpe d'Huez",
@@ -626,7 +626,7 @@
     {
       "stageNumber": 21,
       "periodId": 3,
-      "date": "2025-07-26",
+      "date": "2026-07-26",
       "name": "Stage 21",
       "origin": "Thoiry",
       "destination": "Paris (Champs-Élysées)",

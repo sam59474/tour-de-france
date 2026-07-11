@@ -163,3 +163,143 @@ $gray: #6B7280;
   border-top: 1px solid #F3F4F6;
   text-align: right;
 }
+
+// Clickable stage columns
+.clickable {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+  &:hover { background: #E5E7EB; }
+  &.selected { background: $blue; color: $white; }
+}
+
+.score-cell.selected-col {
+  background: #EFF6FF;
+}
+
+.click-hint {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+  color: $gray;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
+// Close button
+.btn-close {
+  background: rgba(255,255,255,0.2);
+  color: $white;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: inherit;
+  &:hover { background: rgba(255,255,255,0.3); }
+}
+
+// Stage detail card
+.detail-card {
+  border-color: $blue;
+  border-width: 2px;
+}
+
+.detail-formula {
+  padding: 0.75rem 1.25rem;
+  background: #F0F4FF;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: $dark;
+  border-bottom: 1px solid #E5E7EB;
+
+  .formula-note {
+    display: block;
+    font-family: 'Georgia', serif;
+    font-size: 0.75rem;
+    color: $gray;
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+
+  th {
+    background: #F3F4F6;
+    padding: 0.5rem 0.6rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $gray;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  td {
+    padding: 0.5rem 0.6rem;
+    border-bottom: 1px solid #F3F4F6;
+    color: $dark;
+    vertical-align: top;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: #FAFAFA; }
+
+  tbody tr.first { background: #FFFBEB; }
+  tbody tr.second { background: #F9FAFB; }
+  tbody tr.third { background: #FFF7F0; }
+}
+
+.cyclists-cell, .positions-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.cyclist-tag, .pos-tag {
+  font-size: 0.75rem;
+  background: #F3F4F6;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+
+  &.top-three {
+    background: #DBEAFE;
+    color: #1D4ED8;
+    font-weight: 600;
+  }
+
+  &.dnf {
+    background: #FEE2E2;
+    color: $red;
+    text-decoration: line-through;
+  }
+}
+
+.sum-cell {
+  font-weight: 600;
+}
+
+.rank-val {
+  font-weight: 700;
+  color: $blue;
+}
+
+.win-val {
+  color: darken($yellow, 20%);
+  font-weight: 600;
+}
+
+.score-val {
+  font-weight: 700;
+  color: $blue;
+  font-size: 0.95rem;
+}
+
+.win-badge {
+  font-size: 0.75rem;
+}

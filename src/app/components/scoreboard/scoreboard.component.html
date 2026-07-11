@@ -18,7 +18,7 @@
       </div>
 
       <div *ngIf="totals.length === 0" class="empty-state">
-        No results entered yet. Head to <strong>Stages</strong> to get started.
+        No results entered yet. Run the parse script to get started.
       </div>
 
       <table *ngIf="totals.length > 0" class="standings-table">
@@ -54,8 +54,8 @@
         <div class="period-filter">
           <label>Period:</label>
           <select [(ngModel)]="selectedPeriod" [ngModelOptions]="{standalone: true}">
-            <option [value]="0">All</option>
-            <option *ngFor="let p of periods" [value]="p.id">{{ p.name }}</option>
+            <option [ngValue]="0">All</option>
+            <option *ngFor="let p of periods" [ngValue]="p.id">{{ p.name }}</option>
           </select>
         </div>
       </div>
@@ -65,17 +65,21 @@
           <thead>
             <tr>
               <th>Player</th>
-              <th *ngFor="let s of filteredStageScores" class="stage-col">
+              <th *ngFor="let s of filteredStageScores" class="stage-col clickable"
+                  (click)="toggleStageDetail(s.stageNumber)"
+                  [class.selected]="expandedStage === s.stageNumber">
                 St. {{ s.stageNumber }}
               </th>
-              <th>Stage Total</th>
+              <th>Total</th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let t of totals">
               <td class="player-name">{{ t.player }}</td>
               <td *ngFor="let s of filteredStageScores" class="score-cell"
-                  [class.stage-win]="playerHasStageWin(s.stageNumber, t.player)">
+                  [class.stage-win]="playerHasStageWin(s.stageNumber, t.player)"
+                  [class.selected-col]="expandedStage === s.stageNumber"
+                  (click)="toggleStageDetail(s.stageNumber)">
                 {{ getStageScore(t.player, s.stageNumber) | number:'1.0-0' }}
               </td>
               <td class="total-score">{{ t.stageTotal | number:'1.0-0' }}</td>
@@ -83,28 +87,62 @@
           </tbody>
         </table>
       </div>
+
+      <p class="click-hint" *ngIf="!expandedStage">Click a stage column for detailed scoring breakdown</p>
     </section>
 
-    <!-- Period Scores -->
-    <section class="card" *ngIf="periodScores.length > 0">
+    <!-- Expanded Stage Detail -->
+    <section class="card detail-card" *ngIf="expandedStage && expandedStageData">
       <div class="card-header">
-        <h2>🗓️ Period Scores</h2>
+        <h2>🔍 Stage {{ expandedStage }} — Scoring Detail</h2>
+        <button class="btn-close" (click)="closeDetail()">✕ Close</button>
       </div>
-      <table class="standings-table">
+
+      <div class="detail-formula">
+        Score = 80 − (30 ÷ {{ playerCount }}) × (P − 1) + W
+        <span class="formula-note">P = rank by top-3 sum, W = 20 if stage win, else 0</span>
+      </div>
+
+      <table class="detail-table">
         <thead>
           <tr>
+            <th>#</th>
             <th>Player</th>
-            <th *ngFor="let ps of periodScores">{{ data.config.periods[ps.periodId - 1].name }}</th>
-            <th>Period Total</th>
+            <th>Cyclists</th>
+            <th>Positions</th>
+            <th>Top 3 Sum</th>
+            <th>P</th>
+            <th>W</th>
+            <th>Score</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let t of totals">
-            <td class="player-name">{{ t.player }}</td>
-            <td *ngFor="let ps of periodScores" class="score-cell">
-              {{ getPeriodScore(t.player, ps.periodId) | number:'1.0-0' }}
+          <tr *ngFor="let ps of expandedStageData; let i = index" [class]="getRankClass(ps.rank)">
+            <td>{{ ps.rank }}</td>
+            <td class="player-name">
+              {{ ps.player }}
+              <span *ngIf="ps.hasStageWin" class="win-badge">⭐</span>
             </td>
-            <td class="total-score">{{ t.periodTotal | number:'1.0-0' }}</td>
+            <td class="cyclists-cell">
+              <span *ngFor="let c of ps.cyclists; let j = index"
+                    class="cyclist-tag"
+                    [class.top-three]="isTopThree(ps, j)"
+                    [class.dnf]="ps.positions[j] === 9999">
+                {{ c }}
+              </span>
+            </td>
+            <td class="positions-cell">
+              <span *ngFor="let pos of ps.positions; let j = index"
+                    class="pos-tag"
+                    [class.top-three]="isTopThree(ps, j)"
+                    [class.dnf]="pos === 9999">
+                {{ pos === 9999 ? 'DNF' : pos }}
+              </span>
+            </td>
+            <td class="sum-cell">{{ ps.topThreeSum }}</td>
+            <td class="rank-val">{{ ps.rank }}</td>
+            <td class="win-val">{{ ps.hasStageWin ? 20 : 0 }}</td>
+            <td class="score-val">{{ ps.score | number:'1.0-1' }}</td>
           </tr>
         </tbody>
       </table>

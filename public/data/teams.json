@@ -23,11 +23,11 @@
           "player": "Ron",
           "elite": "Tadej Pogačar",
           "capitaine": "Florian Lipowitz",
-          "coequipiers": ["Tobias Halland Johannessen", "Cian Uijtdebroeks"],
+          "coequipiers": ["Tobias Johannessen", "Cian Uijtdebroeks"],
           "stageOverrides": [
             {
               "stages": [7],
-              "coequipiers": ["Tobias Halland Johannessen", "Daan Hoole"]
+              "coequipiers": ["Tobias Johannessen", "Daan Hoole"]
             }]
         },
         {
@@ -67,7 +67,7 @@
           "player": "Ron",
           "elite": "Jonas Vingegaard",
           "capitaine": "Florian Lipowitz",
-          "coequipiers": ["Tobias Halland Johannessen", "Egan Bernal"],
+          "coequipiers": ["Tobias Johannessen", "Egan Bernal"],
           "stageOverrides": []
         },
         {
@@ -81,7 +81,7 @@
           "player": "Kendall",
           "elite": "Jonas Vingegaard",
           "capitaine": "Florian Lipowitz",
-          "coequipiers": ["Mattias Skjelmose", "Tobias Halland Johannessen"],
+          "coequipiers": ["Mattias Skjelmose", "Tobias Johannessen"],
           "stageOverrides": []
         },
         {

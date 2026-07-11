@@ -7,6 +7,7 @@ import {
   PlayerTotals,
   StageScoreResult,
   PeriodScoreResult,
+  PlayerStageScore,
   Stage,
   PeriodConfig,
 } from '../../models/models';
@@ -34,6 +35,8 @@ export class ScoreboardComponent implements OnInit {
   periodScoreMap = new Map<number, Map<string, number>>();   // periodId -> player -> score
 
   copySuccess = false;
+  expandedStage: number | null = null;
+  expandedStageData: PlayerStageScore[] | null = null;
 
   private _selectedPeriod = 0;
   filteredStageScores: StageScoreResult[] = [];
@@ -138,6 +141,39 @@ export class ScoreboardComponent implements OnInit {
 
   getPeriodScore(player: string, periodId: number): number {
     return this.periodScoreMap.get(periodId)?.get(player) ?? 0;
+  }
+
+  get playerCount(): number {
+    return this.data?.config.players.length ?? 5;
+  }
+
+  closeDetail(): void {
+    this.expandedStage = null;
+    this.expandedStageData = null;
+    this.cdr.markForCheck();
+  }
+
+  toggleStageDetail(stageNumber: number): void {
+    if (this.expandedStage === stageNumber) {
+      this.expandedStage = null;
+      this.expandedStageData = null;
+    } else {
+      this.expandedStage = stageNumber;
+      const stageResult = this.stageScores.find(s => s.stageNumber === stageNumber);
+      this.expandedStageData = stageResult
+        ? [...stageResult.playerScores].sort((a, b) => a.rank - b.rank)
+        : null;
+    }
+    this.cdr.markForCheck();
+  }
+
+  isTopThree(ps: PlayerStageScore, cyclistIndex: number): boolean {
+    // The top 3 are the 3 lowest positions
+    const sorted = [...ps.positions].sort((a, b) => a - b);
+    const threshold = sorted[2]; // 3rd lowest
+    const pos = ps.positions[cyclistIndex];
+    // Count how many are <= threshold to handle ties
+    return pos <= threshold;
   }
 
   getMedal(rank: number): string {

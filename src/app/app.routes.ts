@@ -7,11 +7,6 @@ export const routes: Routes = [
       import('./components/scoreboard/scoreboard.component').then(m => m.ScoreboardComponent),
   },
   {
-    path: 'stage-entry',
-    loadComponent: () =>
-      import('./components/stage-entry/stage-entry.component').then(m => m.StageEntryComponent),
-  },
-  {
     path: 'teams',
     loadComponent: () =>
       import('./components/team-setup/team-setup.component').then(m => m.TeamSetupComponent),
