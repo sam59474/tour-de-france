@@ -208,29 +208,29 @@ export class ScoreboardComponent implements OnInit {
     if (lastStageScore) {
       lines.push('');
       lines.push(`📊 STAGE ${lastStageScore.stageNumber} — SCORES`);
-      lines.push('─────────────────────');
+      lines.push('────────────────');
       const sorted = [...lastStageScore.playerScores].sort((a, b) => b.score - a.score);
       sorted.forEach(ps => {
-        const win = ps.hasStageWin ? ' ⭐ STAGE WIN' : '';
-        lines.push(`  ${ps.player.padEnd(10)} ${ps.score.toFixed(0)} pts${win}`);
+        const win = ps.hasStageWin ? ' (⭐ STAGE WIN)' : '';
+        lines.push(`${ps.score.toFixed(0)} pts - ${ps.player.padEnd(10)} ${win}`);
       });
     }
 
     lines.push('');
     lines.push('🏅 OVERALL STANDINGS');
-    lines.push('─────────────────────');
+    lines.push('────────────────');
 
     this.totals.forEach((t, i) => {
       const medal = this.getMedal(i + 1);
       lines.push(
-        `${medal || (i + 1) + '.'} ${t.player.padEnd(10)} ${t.grandTotal.toFixed(0)} pts  (Stages: ${t.stageTotal.toFixed(0)}  Periods: ${t.periodTotal.toFixed(0)})`
+        `${t.grandTotal.toFixed(0)} pts - ${medal || (i + 1) + '.'} ${t.player} `
       );
     });
 
     lines.push('');
     const nextStage = stages.stages.filter(s => !s.completed).at(0);
     if (nextStage) {
-      lines.push(`📍 Next Stage ${nextStage.stageNumber}: ${nextStage.origin} → ${nextStage.destination}, ${nextStage.distance}, ${nextStage.type}`);
+      lines.push(`📍 Next - Stage ${nextStage.stageNumber}: ${nextStage.origin} → ${nextStage.destination}, ${nextStage.distance}, ${nextStage.type}`);
     }
 
     lines.push('');

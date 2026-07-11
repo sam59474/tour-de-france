@@ -77,7 +77,7 @@
       "origin": "Tarragona",
       "destination": "Barcelona",
       "distance": "168.5 km",
-      "type": "Hilly stage",
+      "type": "Hilly",
       "completed": true,
       "results": [
         {
@@ -146,7 +146,7 @@
       "origin": "Granollers",
       "destination": "Les Angles",
       "distance": "195.9 km",
-      "type": "Mountain stage",
+      "type": "Mountainous",
       "completed": true,
       "results": [
         {
@@ -215,7 +215,7 @@
       "origin": "Carcassonne",
       "destination": "Foix",
       "distance": "181.9 km",
-      "type": "Hilly stage",
+      "type": "Hilly",
       "completed": true,
       "results": [
         {
@@ -280,7 +280,7 @@
       "origin": "Lannemezan",
       "destination": "Pau",
       "distance": "158.3 km",
-      "type": "Flat stage",
+      "type": "Flat",
       "completed": true,
       "results": [
         {
@@ -345,7 +345,7 @@
       "origin": "Pau",
       "destination": "Gavarnie-Gèdre",
       "distance": "186.2 km",
-      "type": "Mountain stage",
+      "type": "Mountainous",
       "completed": true,
       "results": [
         {
@@ -410,7 +410,7 @@
       "origin": "Hagetmau",
       "destination": "Bordeaux",
       "distance": "175.1 km",
-      "type": "Flat stage",
+      "type": "Flat",
       "completed": true,
       "results": [
         {
@@ -475,9 +475,58 @@
       "origin": "Périgueux",
       "destination": "Bergerac",
       "distance": "180.4 km",
-      "type": "Flat stage",
-      "completed": false,
-      "results": []
+      "type": "Flat",
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 49
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 47
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 62
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 58
+        },
+        {
+          "cyclist": "Jonas Vingegaard",
+          "position": 51
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 53
+        },
+        {
+          "cyclist": "Tobias Johannessen",
+          "position": 29
+        },
+        {
+          "cyclist": "Egan Bernal",
+          "position": 57
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 33
+        },
+        {
+          "cyclist": "Jasper Philipsen",
+          "position": 4
+        },
+        {
+          "cyclist": "Matteo Jorgenson",
+          "position": 85
+        },
+        {
+          "cyclist": "Dorian Godon",
+          "position": 14
+        }
+      ]
     },
     {
       "stageNumber": 9,
@@ -487,7 +536,7 @@
       "origin": "Malemort",
       "destination": "Ussel",
       "distance": "185.5 km",
-      "type": "Hilly stage",
+      "type": "Hilly",
       "completed": false,
       "results": []
     },
@@ -499,7 +548,7 @@
       "origin": "Aurillac",
       "destination": "Le Lioran",
       "distance": "166.6 km",
-      "type": "Mountain stage",
+      "type": "Mountainous",
       "completed": false,
       "results": []
     },
@@ -511,7 +560,7 @@
       "origin": "Vichy",
       "destination": "Nevers",
       "distance": "161.3 km",
-      "type": "Flat stage",
+      "type": "Flat",
       "completed": false,
       "results": []
     },
@@ -523,7 +572,7 @@
       "origin": "Circuit de Nevers Magny-Cours",
       "destination": "Chalon-sur-Saône",
       "distance": "179.1 km",
-      "type": "Flat stage",
+      "type": "Flat",
       "completed": false,
       "results": []
     },
@@ -535,7 +584,7 @@
       "origin": "Dole",
       "destination": "Belfort",
       "distance": "205.8 km",
-      "type": "Hilly stage",
+      "type": "Hilly",
       "completed": false,
       "results": []
     },
@@ -547,7 +596,7 @@
       "origin": "Mulhouse",
       "destination": "Le Markstein Fellering",
       "distance": "155.3 km",
-      "type": "Mountain stage",
+      "type": "Mountainous",
       "completed": false,
       "results": []
     },
@@ -559,7 +608,7 @@
       "origin": "Champagnole",
       "destination": "Plateau de Solaison",
       "distance": "183.9 km",
-      "type": "Mountain stage",
+      "type": "Mountainous",
       "completed": false,
       "results": []
     },
@@ -583,7 +632,7 @@
       "origin": "Chambéry",
       "destination": "Voiron",
       "distance": "174.7 km",
-      "type": "Flat stage",
+      "type": "Flat",
       "completed": false,
       "results": []
     },
@@ -595,7 +644,7 @@
       "origin": "Voiron",
       "destination": "Orcières-Merlette",
       "distance": "185.2 km",
-      "type": "Mountain stage",
+      "type": "Mountainous",
       "completed": false,
       "results": []
     },
@@ -607,7 +656,7 @@
       "origin": "Gap",
       "destination": "Alpe d'Huez",
       "distance": "127.9 km",
-      "type": "Mountain stage",
+      "type": "Mountainous",
       "completed": false,
       "results": []
     },
@@ -619,7 +668,7 @@
       "origin": "Le Bourg-d'Oisans",
       "destination": "Alpe d'Huez",
       "distance": "170.9 km",
-      "type": "Mountain stage",
+      "type": "Mountainous",
       "completed": false,
       "results": []
     },
@@ -631,7 +680,7 @@
       "origin": "Thoiry",
       "destination": "Paris (Champs-Élysées)",
       "distance": "133 km",
-      "type": "Flat stage",
+      "type": "Flat",
       "completed": false,
       "results": []
     }
