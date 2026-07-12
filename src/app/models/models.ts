@@ -61,7 +61,7 @@ export interface Stage {
   origin: string;
   destination: string;
   distance: string;
-  type: 'Flat stage' | 'Hilly stage' | 'Mountain stage' | 'Individual time trial' | 'Team time trial';
+  type: 'Flat' | 'Hilly' | 'Mountainous' | 'Individual Time Trial' | 'Team Time Trial';
   completed: boolean;
   results: CyclistResult[];
 }

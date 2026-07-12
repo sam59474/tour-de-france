@@ -8,7 +8,7 @@
       "origin": "Barcelona",
       "destination": "Barcelona",
       "distance": "19.6 km",
-      "type": "Team time trial",
+      "type": "Team Time Trial",
       "completed": true,
       "results": [
         {
@@ -537,8 +537,57 @@
       "destination": "Ussel",
       "distance": "185.5 km",
       "type": "Hilly",
-      "completed": false,
-      "results": []
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 11
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 27
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 31
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 21
+        },
+        {
+          "cyclist": "Jonas Vingegaard",
+          "position": 19
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 20
+        },
+        {
+          "cyclist": "Tobias Johannessen",
+          "position": 2
+        },
+        {
+          "cyclist": "Egan Bernal",
+          "position": 32
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 15
+        },
+        {
+          "cyclist": "Jasper Philipsen",
+          "position": 164
+        },
+        {
+          "cyclist": "Matteo Jorgenson",
+          "position": 41
+        },
+        {
+          "cyclist": "Dorian Godon",
+          "position": 52
+        }
+      ]
     },
     {
       "stageNumber": 10,
@@ -620,7 +669,7 @@
       "origin": "Évian-les-Bains",
       "destination": "Thonon-les-Bains",
       "distance": "26.1 km",
-      "type": "Individual time trial",
+      "type": "Individual Time Trial",
       "completed": false,
       "results": []
     },
