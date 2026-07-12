@@ -223,7 +223,7 @@ export class ScoreboardComponent implements OnInit {
     this.totals.forEach((t, i) => {
       const medal = this.getMedal(i + 1);
       lines.push(
-        `${t.grandTotal.toFixed(0)} pts - ${medal || (i + 1) + '.'} ${t.player} `
+        `${t.grandTotal.toFixed(0)} pts - ${t.player} `
       );
     });
 

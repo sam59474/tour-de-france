@@ -223,11 +223,11 @@ $light-gray: #F3F4F6;
   letter-spacing: 0.04em;
   white-space: nowrap;
 
-  &.type-flat-stage            { background: #DBEAFE; color: #1D4ED8; }
-  &.type-hilly-stage           { background: #FEF3C7; color: #B45309; }
-  &.type-mountain-stage        { background: #DCF2DC; color: #166534; }
+  &.type-flat              { background: #DBEAFE; color: #1D4ED8; }
+  &.type-hilly             { background: #FEF3C7; color: #B45309; }
+  &.type-mountainous       { background: #DCF2DC; color: #166534; }
   &.type-individual-time-trial { background: #EDE9FE; color: #6D28D9; }
-  &.type-team-time-trial       { background: #FCE7F3; color: #9D174D; }
+  &.type-team-time-trial   { background: #FCE7F3; color: #9D174D; }
 }
 
 // Teams Grid
@@ -357,7 +357,7 @@ $light-gray: #F3F4F6;
 }
 
 // Elites Card
-.elite-card {}
+// .elite-card {}
 
 .elites-list {
   padding: 0.5rem 0;
