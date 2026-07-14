@@ -598,8 +598,57 @@
       "destination": "Le Lioran",
       "distance": "166.6 km",
       "type": "Mountainous",
-      "completed": false,
-      "results": []
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 1
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 5
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 10
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 6
+        },
+        {
+          "cyclist": "Jonas Vingegaard",
+          "position": 7
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 4
+        },
+        {
+          "cyclist": "Tobias Johannessen",
+          "position": 18
+        },
+        {
+          "cyclist": "Egan Bernal",
+          "position": 15
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 3
+        },
+        {
+          "cyclist": "Jasper Philipsen",
+          "position": 160
+        },
+        {
+          "cyclist": "Matteo Jorgenson",
+          "position": 33
+        },
+        {
+          "cyclist": "Dorian Godon",
+          "position": 98
+        }
+      ]
     },
     {
       "stageNumber": 11,
