@@ -659,8 +659,57 @@
       "destination": "Nevers",
       "distance": "161.3 km",
       "type": "Flat",
-      "completed": false,
-      "results": []
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 48
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 59
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 105
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 61
+        },
+        {
+          "cyclist": "Jonas Vingegaard",
+          "position": 66
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 77
+        },
+        {
+          "cyclist": "Tobias Johannessen",
+          "position": 43
+        },
+        {
+          "cyclist": "Egan Bernal",
+          "position": 50
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 63
+        },
+        {
+          "cyclist": "Jasper Philipsen",
+          "position": 3
+        },
+        {
+          "cyclist": "Matteo Jorgenson",
+          "position": 164
+        },
+        {
+          "cyclist": "Dorian Godon",
+          "position": 21
+        }
+      ]
     },
     {
       "stageNumber": 12,
