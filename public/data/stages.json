@@ -720,8 +720,57 @@
       "destination": "Chalon-sur-Saône",
       "distance": "179.1 km",
       "type": "Flat",
-      "completed": false,
-      "results": []
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 50
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 64
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 109
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 41
+        },
+        {
+          "cyclist": "Jonas Vingegaard",
+          "position": 42
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 52
+        },
+        {
+          "cyclist": "Tobias Johannessen",
+          "position": 26
+        },
+        {
+          "cyclist": "Egan Bernal",
+          "position": 124
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 35
+        },
+        {
+          "cyclist": "Jasper Philipsen",
+          "position": 3
+        },
+        {
+          "cyclist": "Matteo Jorgenson",
+          "position": 167
+        },
+        {
+          "cyclist": "Dorian Godon",
+          "position": 148
+        }
+      ]
     },
     {
       "stageNumber": 13,
