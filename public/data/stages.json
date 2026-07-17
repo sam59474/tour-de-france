@@ -781,8 +781,57 @@
       "destination": "Belfort",
       "distance": "205.8 km",
       "type": "Hilly",
-      "completed": false,
-      "results": []
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 38
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 47
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 64
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 46
+        },
+        {
+          "cyclist": "Jonas Vingegaard",
+          "position": 41
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 36
+        },
+        {
+          "cyclist": "Tobias Johannessen",
+          "position": 58
+        },
+        {
+          "cyclist": "Egan Bernal",
+          "position": 55
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 51
+        },
+        {
+          "cyclist": "Jasper Philipsen",
+          "position": 140
+        },
+        {
+          "cyclist": "Matteo Jorgenson",
+          "position": 93
+        },
+        {
+          "cyclist": "Dorian Godon",
+          "position": 171
+        }
+      ]
     },
     {
       "stageNumber": 14,
