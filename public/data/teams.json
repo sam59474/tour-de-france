@@ -98,37 +98,37 @@
       "teams": [
         {
           "player": "Sam",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Jonas Vingegaard",
+          "capitaine": "Juan Ayuso",
+          "coequipiers": ["Richard Carapaz", "Mattias Skjelmose"],
           "stageOverrides": []
         },
         {
           "player": "Ron",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Isaac Del Toro",
+          "capitaine": "Florian Lipowitz",
+          "coequipiers": ["Egan Bernal", "Tobias Johannessen"],
           "stageOverrides": []
         },
         {
           "player": "Margaret",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Remco Evenepoel",
+          "capitaine": "Paul Seixas",
+          "coequipiers": ["Egan Bernal", "Davide Piganzoli"],
           "stageOverrides": []
         },
         {
           "player": "Kendall",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Remco Evenepoel",
+          "capitaine": "Florian Lipowitz",
+          "coequipiers": ["Mads Pedersen", "Thymen Arensman"],
           "stageOverrides": []
         },
         {
           "player": "Luke",
-          "elite": null,
-          "capitaine": null,
-          "coequipiers": [],
+          "elite": "Tadej Pogačar",
+          "capitaine": "Paul Seixas",
+          "coequipiers": ["Ben Healy", "Michael Storer"],
           "stageOverrides": []
         }
       ]

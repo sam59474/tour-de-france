@@ -19,7 +19,20 @@
     },
     {
       "periodId": 2,
-      "standings": []
+      "standings": [
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 6
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 5
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 4
+        }
+      ]
     },
     {
       "periodId": 3,

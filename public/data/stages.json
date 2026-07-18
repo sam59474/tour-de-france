@@ -842,8 +842,57 @@
       "destination": "Le Markstein Fellering",
       "distance": "155.3 km",
       "type": "Mountainous",
-      "completed": false,
-      "results": []
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 1
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 6
+        },
+        {
+          "cyclist": "Lenny Martinez",
+          "position": 11
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 10
+        },
+        {
+          "cyclist": "Jonas Vingegaard",
+          "position": 4
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 7
+        },
+        {
+          "cyclist": "Tobias Johannessen",
+          "position": 9
+        },
+        {
+          "cyclist": "Egan Bernal",
+          "position": 14
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 3
+        },
+        {
+          "cyclist": "Jasper Philipsen",
+          "position": 143
+        },
+        {
+          "cyclist": "Matteo Jorgenson",
+          "position": 34
+        },
+        {
+          "cyclist": "Dorian Godon",
+          "position": 135
+        }
+      ]
     },
     {
       "stageNumber": 15,
