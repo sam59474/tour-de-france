@@ -903,8 +903,73 @@
       "destination": "Plateau de Solaison",
       "distance": "183.9 km",
       "type": "Mountainous",
-      "completed": false,
-      "results": []
+      "completed": true,
+      "results": [
+        {
+          "cyclist": "Jonas Vingegaard",
+          "position": 9999
+        },
+        {
+          "cyclist": "Juan Ayuso",
+          "position": 8
+        },
+        {
+          "cyclist": "Richard Carapaz",
+          "position": 12
+        },
+        {
+          "cyclist": "Mattias Skjelmose",
+          "position": 7
+        },
+        {
+          "cyclist": "Isaac Del Toro",
+          "position": 3
+        },
+        {
+          "cyclist": "Florian Lipowitz",
+          "position": 5
+        },
+        {
+          "cyclist": "Egan Bernal",
+          "position": 69
+        },
+        {
+          "cyclist": "Tobias Johannessen",
+          "position": 95
+        },
+        {
+          "cyclist": "Remco Evenepoel",
+          "position": 1
+        },
+        {
+          "cyclist": "Paul Seixas",
+          "position": 4
+        },
+        {
+          "cyclist": "Davide Piganzoli",
+          "position": 18
+        },
+        {
+          "cyclist": "Mads Pedersen",
+          "position": 141
+        },
+        {
+          "cyclist": "Thymen Arensman",
+          "position": 68
+        },
+        {
+          "cyclist": "Tadej Pogačar",
+          "position": 2
+        },
+        {
+          "cyclist": "Ben Healy",
+          "position": 44
+        },
+        {
+          "cyclist": "Michael Storer",
+          "position": 93
+        }
+      ]
     },
     {
       "stageNumber": 16,
